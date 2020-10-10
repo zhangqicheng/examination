@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/static/bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="/static/app01/css/login.css">
+    <title>在线考试系统</title>
+</head>
+<body>
+    <div class="bg">
+    </div>
+    <div class="login">
+        <div class="login__head">
+            <h3>在线考试系统</h3>
+        </div>
+        <div class="wrap">
+            <form class="form-horizontal" novalidate>
+                {% csrf_token %}
+              <div class="form-group">
+                <div class="col-sm-12">
+                  <input type="user" class="form-control" id="inputuser" placeholder="学号或工号">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-12">
+                  <input type="password" class="form-control" id="inputpwd" placeholder="密码">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-offset-1 col-sm-11">
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox"> 记住我?安全起见，勿点
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-offset-1 col-sm-11">
+                  <button type="button" class="btn btn-default" id="login">登录</button>
+                </div>
+              </div>
+            </form>
+            <div class="info">
+                <span>默认密码：123456</span>
+            </div>
+        </div>
+    </div>
+    <script src="/static/jquery-3.4.1.js"></script>
+    <script>
+        $("#login").click(function () {
+            var user=$("#inputuser").val();
+            var pwd=$("#inputpwd").val();
+            $.ajax({
+                url:'/app01/login/',
+                type:'POST',
+                dataType:'JSON',
+                data:{
+                    'user':user,
+                    'pwd':pwd,
+                    'csrfmiddlewaretoken': $("[name='csrfmiddlewaretoken']").val(),
+                },
+                success:function (data) {
+                    if(data.message=="用户名或密码错误"){
+                        alert(data.message)
+                    }else{
+                        alert(data.message);
+                        setTimeout(function () {
+                            location.href='/app01/index'
+                        },500)
+                    }
+
+                }
+            })
+        })
+    </script>
+</body>
+</html>
