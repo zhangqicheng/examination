@@ -2,122 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f7fba428-4cf4-42de-8428-d8b4e685eaeb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app01/migrations/0008_auto_20200928_1632.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app01/migrations/0009_auto_20200928_1645.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app01/migrations/0010_auto_20200928_1654.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app01/migrations/0011_remove_student_所在专业.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app01/migrations/0012_student_profession.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app01/migrations/0013_auto_20200928_1712.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app01/migrations/0014_auto_20200930_1807.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app01/static/app01/css/header.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app01/static/app01/css/header2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app01/static/app01/css/header2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app01/static/app01/css/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app01/static/app01/css/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app01/static/app01/css/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app01/static/app01/images/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app01/static/app01/images/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app01/static/app01/images/icon/QQ-line.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app01/static/app01/images/icon/QQ.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app01/static/app01/images/icon/sina-line.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app01/static/app01/images/icon/wx-line.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app01/static/app01/images/icon/wx.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app01/static/app01/images/logo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app01/static/app01/images/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app01/templates/app01/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app01/templates/app01/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app01/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/conf/fastcgi.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/conf/fastcgi_params" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/conf/koi-utf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/conf/koi-win" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/conf/mime.types" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/conf/nginx.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/conf/scgi_params" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/conf/uwsgi_params" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/conf/win-utf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/contrib/README" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/contrib/geo2nginx.pl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/contrib/unicode2nginx/koi-utf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/contrib/unicode2nginx/unicode-to-nginx.pl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/contrib/unicode2nginx/win-utf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/contrib/vim/ftdetect/nginx.vim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/contrib/vim/ftplugin/nginx.vim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/contrib/vim/indent/nginx.vim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/contrib/vim/syntax/nginx.vim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/docs/CHANGES" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/docs/CHANGES.ru" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/docs/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/docs/OpenSSL.LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/docs/PCRE.LICENCE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/docs/README" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/docs/zlib.LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/html/50x.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/html/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/logs/access.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/logs/error.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/logs/nginx.pid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/nginx.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-3.3.7-dist/css/bootstrap-theme.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-3.3.7-dist/css/bootstrap-theme.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-3.3.7-dist/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-3.3.7-dist/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-3.3.7-dist/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-3.3.7-dist/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-3.3.7-dist/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-3.3.7-dist/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-3.3.7-dist/js/npm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/font-awesome-4.7.0/HELP-US-OUT.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/font-awesome-4.7.0/css/font-awesome.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/font-awesome-4.7.0/css/font-awesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/font-awesome-4.7.0/fonts/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/font-awesome-4.7.0/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/font-awesome-4.7.0/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/font-awesome-4.7.0/less/animated.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/font-awesome-4.7.0/less/bordered-pulled.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/font-awesome-4.7.0/less/core.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/font-awesome-4.7.0/less/fixed-width.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/font-awesome-4.7.0/less/font-awesome.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/font-awesome-4.7.0/less/icons.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/font-awesome-4.7.0/less/larger.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/font-awesome-4.7.0/less/list.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/font-awesome-4.7.0/less/mixins.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/font-awesome-4.7.0/less/path.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/font-awesome-4.7.0/less/rotated-flipped.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/font-awesome-4.7.0/less/screen-reader.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/font-awesome-4.7.0/less/stacked.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/font-awesome-4.7.0/less/variables.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/font-awesome-4.7.0/scss/_animated.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/font-awesome-4.7.0/scss/_bordered-pulled.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/font-awesome-4.7.0/scss/_core.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/font-awesome-4.7.0/scss/_fixed-width.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/font-awesome-4.7.0/scss/_icons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/font-awesome-4.7.0/scss/_larger.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/font-awesome-4.7.0/scss/_list.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/font-awesome-4.7.0/scss/_mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/font-awesome-4.7.0/scss/_path.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/font-awesome-4.7.0/scss/_rotated-flipped.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/font-awesome-4.7.0/scss/_screen-reader.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/font-awesome-4.7.0/scss/_stacked.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/font-awesome-4.7.0/scss/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/font-awesome-4.7.0/scss/font-awesome.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/jquery-3.4.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app01/md/xxx.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rbac/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rbac/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rbac/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rbac/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rbac/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rbac/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rbac/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rbac/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app01/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/app01/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app01/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/app01/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app01/migrations/0002_auto_20200928_1513.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app01/migrations/0003_auto_20200928_1521.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app01/migrations/0004_auto_20200928_1527.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app01/migrations/0005_auto_20200928_1531.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app01/migrations/0006_paper_a.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app01/migrations/0007_auto_20200928_1551.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app01/migrations/0008_auto_20200928_1632.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app01/migrations/0009_auto_20200928_1645.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app01/migrations/0010_auto_20200928_1654.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app01/migrations/0011_remove_student_所在专业.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app01/migrations/0012_student_profession.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app01/migrations/0013_auto_20200928_1712.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app01/migrations/0014_auto_20200930_1807.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app01/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app01/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app01/static/app01/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/app01/static/app01/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app01/static/app01/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/app01/static/app01/css/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app01/templates/app01/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app01/templates/app01/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app01/templates/app01/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/app01/templates/app01/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app01/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/app01/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app01/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app01/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app01/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app01/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examination/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/examination/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examination/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/examination/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/logs/access.log" beforeDir="false" afterPath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/logs/access.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/logs/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/logs/error.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/logs/nginx.pid" beforeDir="false" afterPath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/logs/nginx.pid" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/跟进日志.txt" beforeDir="false" afterPath="$PROJECT_DIR$/跟进日志.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -133,6 +53,7 @@
       <list>
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -140,13 +61,16 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1i7N7T8Kzek9yUu4Cd3XH2d5cRO" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -168,7 +92,7 @@
       <recent name="D:\ZQC\examination\app01" />
     </key>
   </component>
-  <component name="RunManager" selected="Django server.examination">
+  <component name="RunManager" selected="Python.tests">
     <configuration name="tests" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="examination" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -197,6 +121,7 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="examination.settings" />
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
@@ -245,11 +170,17 @@
       <workItem from="1601880667827" duration="7104000" />
       <workItem from="1602204129502" duration="15311000" />
       <workItem from="1602291496232" duration="7714000" />
+      <workItem from="1602387137966" duration="317000" />
+      <workItem from="1602398801137" duration="7414000" />
+      <workItem from="1602462215096" duration="20231000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="173" y="84" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601871888943">
@@ -260,36 +191,36 @@
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="499" y="184" key="FileChooserDialogImpl/0.0.1440.860@0.0.1440.860" timestamp="1602235394070" />
-    <state width="1380" height="212" key="GridCell.Tab.0.bottom" timestamp="1601353705641">
+    <state width="1379" height="212" key="GridCell.Tab.0.bottom" timestamp="1602495097163">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="1380" height="212" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1601353705641" />
-    <state width="1380" height="212" key="GridCell.Tab.0.center" timestamp="1601353705641">
+    <state width="1379" height="212" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1602495097163" />
+    <state width="1379" height="212" key="GridCell.Tab.0.center" timestamp="1602495097163">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="1380" height="212" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1601353705641" />
-    <state width="1380" height="212" key="GridCell.Tab.0.left" timestamp="1601353705640">
+    <state width="1379" height="212" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1602495097163" />
+    <state width="1379" height="212" key="GridCell.Tab.0.left" timestamp="1602495097163">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="1380" height="212" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1601353705640" />
-    <state width="1380" height="212" key="GridCell.Tab.0.right" timestamp="1601353705641">
+    <state width="1379" height="212" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1602495097163" />
+    <state width="1379" height="212" key="GridCell.Tab.0.right" timestamp="1602495097163">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="1380" height="212" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1601353705641" />
-    <state x="400" y="252" key="com.intellij.ide.util.TipDialog" timestamp="1602204154736">
+    <state width="1379" height="212" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1602495097163" />
+    <state x="400" y="252" key="com.intellij.ide.util.TipDialog" timestamp="1602462475346">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="400" y="252" key="com.intellij.ide.util.TipDialog/0.0.1440.860@0.0.1440.860" timestamp="1602204154736" />
-    <state x="383" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1602295167211">
+    <state x="400" y="252" key="com.intellij.ide.util.TipDialog/0.0.1440.860@0.0.1440.860" timestamp="1602462475346" />
+    <state x="383" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1602494847117">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="383" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1440.860@0.0.1440.860" timestamp="1602295167211" />
+    <state x="383" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1440.860@0.0.1440.860" timestamp="1602494847117" />
     <state x="441" y="330" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1602299354527">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="441" y="330" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1440.860@0.0.1440.860" timestamp="1602299354527" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/examination$tests.coverage" NAME="tests Coverage Results" MODIFIED="1601353666731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app01" />
+    <SUITE FILE_PATH="coverage/examination$tests.coverage" NAME="tests Coverage Results" MODIFIED="1602495097157" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app01" />
   </component>
 </project>

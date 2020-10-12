@@ -12,49 +12,39 @@
 </head>
 <body>
     <div class="header">
-        <div class="header__logo left">
-            <span>在线考试系统</span>
-        </div>
-        <div class="header__text left">
-            <button class="btn btn-info">学生登录</button>
-            <button class="btn btn-success">教师登录</button>
-            <span>管理员</span>
-        </div>
-        <div class="header__exit left">
-            <button class="btn btn-danger">退出</button>
-        </div>
-    </div>
-    <div class="container">
         <div class="wrap">
-            <div class="wrap__head">
-                <a href=""><span>个人信息</span></a>
-                <a href=""><span>考试安排</span></a>
-                <a href=""><span>成绩查看</span></a>
+            <div class="logo">
+                <span>在线考试系统</span>
             </div>
-            <div class="info">
-                <h3>个人信息</h3>
-                <table class="table table-hover table-condensed top">
-                    <thead>
-                        <tr>
-                            <td>属性</td>
-                            <td>信息</td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>学号</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>姓名</td>
-                            <td></td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="quit">
+                <span>教师:</span>
+                <span>管理人</span>
+                <button type="button" class="btn btn-danger">退出</button>
             </div>
         </div>
     </div>
-
+    <div class="show">
+        <div class="box">
+            <a href="{% url 'app01:info' %}">
+                <div class="box-item left">
+                    <div class="icon"><i class="fa fa-address-card fa-2x" aria-hidden="true"></i></div>
+                    <div class="text"><span>个人信息</span></div>
+                </div>
+            </a>
+            <a href="{% url 'app01:test' %}">
+                <div class="box-item left">
+                    <div class="icon"><i class="fa fa-bed fa-2x" aria-hidden="true"></i></div>
+                    <div class="text"><span>考试安排</span></div>
+                </div>
+            </a>
+            <a href="{% url 'app01:score' %}">
+                <div class="box-item left">
+                    <div class="icon"><i class="fa fa-bicycle fa-2x" aria-hidden="true"></i></div>
+                    <div class="text"><span>成绩查询</span></div>
+                </div>
+            </a>
+        </div>
+    </div>
 
 </body>
 </html>

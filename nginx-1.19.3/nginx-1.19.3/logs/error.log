@@ -36,3 +36,4 @@
 2020/10/05 15:12:54 [emerg] 4332#8580: invalid number of arguments in "root" directive in D:\ZQC\Django\soft\nginx-1.19.3\nginx-1.19.3/conf/nginx.conf:45
 2020/10/05 15:13:18 [notice] 5752#4612: signal process started
 2020/10/09 08:50:22 [notice] 8424#2444: signal process started
+2020/10/10 15:29:43 [notice] 1812#5888: signal process started

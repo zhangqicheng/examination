@@ -43,6 +43,7 @@ a{
     top: 50%;
     margin-top: -200px;
     margin-left: -150px;
+    border-radius: 5px;
 }
 
 .login__head{
