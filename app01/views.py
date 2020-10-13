@@ -4,6 +4,8 @@ from django.views import View
 from app01 import models
 import json
 from django.db.models import Q
+from rbac.service.init_permission import init_permission
+from app01.forms import InfoForm
 
 #登录视图
 class Login(View):
@@ -17,7 +19,7 @@ class Login(View):
         password=request.POST.get('pwd')
         check=request.POST.get('check')
 
-        #2.根据登录身份，获取当前用户对象
+        #2.登录
         if check=='student':
             current_user = models.Student.objects.filter(Q(pk=number) & Q(password=password)).first()
         else:
@@ -27,17 +29,10 @@ class Login(View):
             message['message'] = '用户名或密码错误'
             return HttpResponse(json.dumps(message))
 
-        """
-        如正确，根据当前用户获取所有权限信息,并放入session
-        """
-        #3.获取当前用户权限信息
-        permission_query=current_user.roles.filter(permissions__isnull=False).values('permissions__title','permissions__url').distinct()
-        permission_list=[permission['permissions__url'] for permission in permission_query]
+        #3.初始化权限信息
+        init_permission(current_user,request)
 
-        #4.将权限信息放入session中
-        request.session['qicheng']=permission_list
-
-        #最后刷新信息给ajax
+        #刷新信息ajax
         message['message']='登录成功'
         return HttpResponse(json.dumps(message))
 
@@ -50,7 +45,8 @@ class Index(View):
 #个人信息
 class Info(View):
     def get(self,request):
-        return HttpResponse('个人信息')
+        form=InfoForm()
+        return render(request,'app01/info.html',{'form':form})
 
 #考试安排
 class Test(View):

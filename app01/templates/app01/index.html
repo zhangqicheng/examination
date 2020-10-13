@@ -25,24 +25,26 @@
     </div>
     <div class="show">
         <div class="box">
-            <a href="{% url 'app01:info' %}">
+            {% for item in request.session.qicheng_menu %}
+            <a href="{{ item.url }}">
                 <div class="box-item left">
-                    <div class="icon"><i class="fa fa-address-card fa-2x" aria-hidden="true"></i></div>
-                    <div class="text"><span>个人信息</span></div>
+                    <div class="icon"><i class="{{ item.icon }}" aria-hidden="true"></i></div>
+                    <div class="text"><span>{{ item.title }}</span></div>
                 </div>
             </a>
-            <a href="{% url 'app01:test' %}">
-                <div class="box-item left">
-                    <div class="icon"><i class="fa fa-bed fa-2x" aria-hidden="true"></i></div>
-                    <div class="text"><span>考试安排</span></div>
-                </div>
-            </a>
-            <a href="{% url 'app01:score' %}">
-                <div class="box-item left">
-                    <div class="icon"><i class="fa fa-bicycle fa-2x" aria-hidden="true"></i></div>
-                    <div class="text"><span>成绩查询</span></div>
-                </div>
-            </a>
+            {% endfor %}
+{#            <a href="{% url 'app01:test' %}">#}
+{#                <div class="box-item left">#}
+{#                    <div class="icon"><i class="fa fa-bed fa-2x" aria-hidden="true"></i></div>#}
+{#                    <div class="text"><span>考试安排</span></div>#}
+{#                </div>#}
+{#            </a>#}
+{#            <a href="{% url 'app01:score' %}">#}
+{#                <div class="box-item left">#}
+{#                    <div class="icon"><i class="fa fa-bicycle fa-2x" aria-hidden="true"></i></div>#}
+{#                    <div class="text"><span>成绩查询</span></div>#}
+{#                </div>#}
+{#            </a>#}
         </div>
     </div>
 

@@ -5,6 +5,8 @@ class Permission(models.Model):
     '''权限表'''
     title=models.CharField(verbose_name='标题',max_length=32)
     url=models.CharField(verbose_name='含有正则的url',max_length=128)
+    is_menu=models.BooleanField(verbose_name='是否为菜单',default=False)
+    icon=models.CharField(verbose_name='图标',max_length=32,null=True,blank=True)
 
     def __str__(self):
         return self.title

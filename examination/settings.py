@@ -50,7 +50,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'app01.md.xxx.CheckPermission',
+    'rbac.middleware.rbac.RbacMiddleware',
 ]
 
 ROOT_URLCONF = 'examination.urls'
@@ -132,6 +132,31 @@ USE_TZ = True
 #静态文件路劲
 STATIC_URL = '/static/'
 STATICFILES_DIRS=(
-    os.path.join(BASE_DIR,'static/'),
-    os.path.join(BASE_DIR,'app01/static/')
+    os.path.join(BASE_DIR,'static'),
+    os.path.join(BASE_DIR,'app01/static'),
 )
+
+# ------------------------------权限配置相关信息--------------------------
+PERMISSION_SESSION_KEY='qicheng_permission'            #session的权限key值
+MENU_SESSION_KEY='qicheng_menu'                        #session的菜单key值
+VALID_URL_LIST=[                                       #权限白名单
+    '/app01/login/$',
+    '/admin/.*'
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
