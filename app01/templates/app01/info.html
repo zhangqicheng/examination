@@ -1,12 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>个人信息</title>
-    <link rel="stylesheet" href="/static/bootstrap-3.3.7-dist/css/bootstrap.css">
-    <link rel="stylesheet" href="/static/font-awesome-4.7.0/css/font-awesome.css">
-</head>
-<body>
-    {{ form.as_ul }}
-</body>
-</html>
+{% extends 'app01/base.html' %}}
+{% block css %}{% endblock %}
+
+{% block title %}
+个人信息
+{% endblock %}
+
+{% block show %}
+    <div class="wrap" style="width: 500px;margin: 20px auto 10px;text-align: center">
+        <h2>个人信息</h2>
+        <form class="form-horizontal" novalidate method="post" action="{% url 'app01:info' %}">
+        {% csrf_token %}
+            {% for form in form_obj %}
+              <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">{{ form.label }}</label>
+                <div class="col-sm-10">
+                  {{ form }}
+                </div>
+              <span style="color: red">{{ form.errors.0 }}</span>
+              </div>
+            {% endfor %}
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10" style="text-align: left">
+                  <button type="submit" class="btn btn-success">确认</button>
+                    <button type="button" id="back" class="btn btn-info">取消</button>
+                </div>
+            </div>
+        </form>
+    </div>
+{% endblock %}
+{% block js %}
+    <script>
+    $("#back").click(function(){
+        location.href="/app01/index/"
+    })
+    </script>
+{% endblock %}
+

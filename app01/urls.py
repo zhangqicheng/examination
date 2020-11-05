@@ -15,12 +15,19 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,re_path
-from app01.views import Login,Index,Info,Test,Score
+from app01.views import Login,Logout,Index,Info,Test,Score,Paper,TestProcess,ClosePaper,OpenPaper,\
+    WritePaper
 
 urlpatterns = [
     path('login/',Login.as_view(),name='login'),         #登录
+    path('logout/',Logout.as_view(),name='logout'),      #退出
     path('index/',Index.as_view(),name='index'),         #首页
     path('info/',Info.as_view(),name='info'),            #个人信息
     path('test/',Test.as_view(),name='test'),            #考试安排
+    re_path('test/process/(\d+)/',TestProcess.as_view(),name='testprocess'),     #正式考试
     path('score/',Score.as_view(),name='score'),          #成绩查询
+    path('paper/',Paper.as_view(),name='paper'),          #试卷开发
+    path('writepaper/',WritePaper.as_view(),name='writepaper'),    #编写试卷
+    re_path('closepaper/(\d+)/',ClosePaper.as_view(),name='closepaper'),     #关闭试卷
+    re_path('openpaper/(\d+)/',OpenPaper.as_view(),name='openpaper'),        #开启试卷
 ]

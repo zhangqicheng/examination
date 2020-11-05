@@ -20,9 +20,14 @@
         <div class="wrap">
             <form class="form-horizontal" novalidate>
                 {% csrf_token %}
+                <div class="form-group">
+                <div class="col-sm-12">
+                    <input type="text" class="form-control" id="inputuser" placeholder="姓名">
+                </div>
+                </div>
               <div class="form-group">
                 <div class="col-sm-12">
-                  <input type="user" class="form-control" id="inputuser" placeholder="学号或工号">
+                  <input type="text" class="form-control" id="inputid" placeholder="学号或工号">
                 </div>
               </div>
               <div class="form-group">
@@ -30,18 +35,18 @@
                   <input type="password" class="form-control" id="inputpwd" placeholder="密码">
                 </div>
               </div>
-              <div class="form-group">
-                  <div class="checkbox">
-                    <label><input type="radio" name="check" value="student" checked="checked">学生登录</label>
-                    <label for=""><input type="radio" name="check" value="teacher">教师登录</label>
-                  </div>
-              </div>
+{#              <div class="form-group">#}
+{#                  <div class="checkbox">#}
+{#                    <label><input type="radio" name="check" value="student" checked="checked">学生登录</label>#}
+{#                    <label for=""><input type="radio" name="check" value="teacher">教师登录</label>#}
+{#                  </div>#}
+{#              </div>#}
               <div class="form-group" style="text-align: center">
                   <button type="button" class="btn btn-default" id="login">登录</button>
               </div>
             </form>
             <div class="info">
-                <span>默认密码：123456</span>
+                <span>默认密码：123</span>
             </div>
         </div>
     </div>
@@ -49,6 +54,7 @@
     <script>
         $("#login").click(function () {
             var user=$("#inputuser").val();
+            var id=$("#inputid").val();
             var pwd=$("#inputpwd").val();
             var check=$("input[type='radio']:checked").val();
             $.ajax({
@@ -57,6 +63,7 @@
                 dataType:'JSON',
                 data:{
                     'user':user,
+                    'id':id,
                     'pwd':pwd,
                     'check':check,
                     'csrfmiddlewaretoken': $("[name='csrfmiddlewaretoken']").val(),
@@ -67,10 +74,9 @@
                     }else{
                         alert(data.message);
                         setTimeout(function () {
-                            location.href='/app01/index'
+                            location.href= '/app01/index/';
                         },200)
                     }
-
                 }
             })
         })

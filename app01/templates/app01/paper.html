@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/static/bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="/static/app01/css/base.css">
+    <link rel="stylesheet" href="/static/app01/css/paper.css">
+    <title>在线考试系统</title>
+</head>
+<body>
+    <div class="header" style="position: fixed;top: 0;left: 0;z-index: 99">
+        <div class="wrap">
+            <div class="logo">
+                <span>在线考试系统</span>
+            </div>
+            <div class="quit">
+                <span style="font-size: 16px;">{{ request.user.username }}:</span>
+                <span style="font-size: 16px;">{{ request.user.roles.first.title }}</span>
+                <button type="button" id="quit" class="btn btn-danger" style="margin-left: 10px">退出</button>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="main_wrap">
+            <div class="main_left">
+                <a href="{% url 'app01:writepaper' %}" class="create-btn">
+                    <i class="fa fa-plus" aria-hidden="true" style="color: white;"></i>
+                    <span>创建试卷</span>
+                </a>
+                <ul class="survey-ul">
+                    <li>
+                        <a class="folder-btn cur" id="paper">
+                            <i class="fa fa-file index-iconfont" aria-hidden="true"></i>
+                            <span>全部试卷</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="folder-btn" id="folder">
+                            <i class="fa fa-file index-iconfont" aria-hidden="true"></i>
+                            <span>文件夹</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="folder-btn" id="bin">
+                            <i class="fa fa-file index-iconfont" aria-hidden="true"></i>
+                            <span>回收站</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="main_right">
+                <div class="content">
+                    <div class="content_search">
+                        <h3 class="left mysurvey">试卷列表</h3>
+                        <div class="right search" onmouseover="search_over()" onmouseout="search_out()">
+                            <input type="text" placeholder="搜索..." class="search-text">
+                            <input type="button" value="提交" class="search-btn">
+                        </div>
+                        <div class="right spinner-list" id="status" style="margin-right: 14px;padding: 13px 0;">
+                            <div>
+                                <span class="status-cur">状态</span>
+                                <i class="fa fa-sort" aria-hidden="true" style="color: #888"></i>
+                            </div>
+                            <div>
+                                <ul class="status-box hide" id="search-status">
+                                    <li><a href="">状态</a></li>
+                                    <li><a href="">未发布</a></li>
+                                    <li><a href="">已发布</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="right spinner-list" style="margin-right: 14px;padding: 13px 0;">
+                            <div>
+                                <span class="status-cur">时间倒序</span>
+                                <i class="fa fa-sort" aria-hidden="true" style="color: #888"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-list" id="menu-paper">
+                        <dl class="content-items">
+                            <dt class="item-top">
+                                <div class="left">
+                                    <a href="" class="item-tit">试卷1</a>
+                                </div>
+                                <div class="right">
+                                    <div class="left item-id">ID:95802871</div>
+                                    <div class="left item-draft">
+                                        <i class="fa fa-snowflake-o" aria-hidden="true"></i>
+                                        <span>未发布</span>
+                                    </div>
+                                    <div class="left item-sheet">答卷</div>
+                                    <div class="left item-data">10月31日 23:36</div>
+                                </div>
+                            </dt>
+                            <dd class="item-bot">
+                                <div class="left process-box">
+                                    <div class="left process-1">
+                                        <div class="spinner-list">
+                                            <a href="" class="spinner-list-a">
+                                                <i class="icon design-icon"></i>
+                                                <span>考试设计</span>
+                                                <i class="fa fa-caret-down" aria-hidden="true" style="font-style: normal;margin-right: 5px;"></i>
+                                            </a>
+                                            <ul class="status-box" id="item-bot-1" style="left: 0;">
+                                                <li><a href="">考试1</a></li>
+                                                <li><a href="">考试2</a></li>
+                                                <li><a href="">考试3</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="left process-1">
+                                        <div class="spinner-list">
+                                            <a href="" class="spinner-list-a">
+                                                <i class="icon test-icon"></i>
+                                                <span>发送考试</span>
+                                                <i class="fa fa-caret-down" aria-hidden="true" style="font-style: normal;margin-right: 5px;"></i>
+                                            </a>
+                                            <ul class="status-box" id="item-bot-2" style="left: 0">
+                                                <li><a href="">发送1</a></li>
+                                                <li><a href="">发送2</a></li>
+                                                <li><a href="">发送3</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="left process-1">
+                                        <div class="spinner-list">
+                                            <a href="" class="spinner-list-a">
+                                                <i class="icon score-icon"></i>
+                                                <span>成绩&查询</span>
+                                                <i class="fa fa-caret-down" aria-hidden="true" style="font-style: normal;margin-right: 5px;"></i>
+                                            </a>
+                                            <ul class="status-box" id="item-bot-3" style="left: 0">
+                                                <li><a href="">成绩功能1</a></li>
+                                                <li><a href="">成绩功能2</a></li>
+                                                <li><a href="">成绩功能3</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="right operation-box">
+                                    <a href="">
+                                        <i class="fa fa-wifi" aria-hidden="true"></i>
+                                        <span style="color: green;font-weight: bold;">已发布</span>
+                                    </a>
+                                    <a href="">
+                                        <i class="fa fa-play" aria-hidden="true"></i>
+                                        <span>开启</span>
+                                    </a>
+                                    <a href="">
+                                        <i class="fa fa-stop-circle" aria-hidden="true"></i>
+                                        <span>关闭</span>
+                                    </a>
+                                    <a href="">
+                                        <i class="fa fa-clipboard" aria-hidden="true"></i>
+                                        <span>复制</span>
+                                    </a>
+                                    <a href="">
+                                        <i class="fa fa-trash" aria-hidden="true"></i>
+                                        <span>删除</span>
+                                    </a>
+                                    <a href="">
+                                        <i class="fa fa-exclamation" aria-hidden="true"></i>
+                                        <span>提醒</span>
+                                    </a>
+                                </div>
+                            </dd>
+                        </dl>
+
+
+                        <dl class="content-items">
+                            <dt class="item-top">
+                                <div class="left">
+                                    <a href="" class="item-tit">试卷2</a>
+                                </div>
+                                <div class="right">
+                                    <div class="left item-id">ID:95802871</div>
+                                    <div class="left item-draft">
+                                        <i class="fa fa-snowflake-o" aria-hidden="true"></i>
+                                        <span>未发布</span>
+                                    </div>
+                                    <div class="left item-sheet">答卷</div>
+                                    <div class="left item-data">10月31日 23:36</div>
+                                </div>
+                            </dt>
+                            <dd class="item-bot">
+                                <div class="left process-box">
+                                    <div class="left process-1">
+                                        <div class="spinner-list">
+                                            <a href="" class="spinner-list-a">
+                                                <i class="icon design-icon"></i>
+                                                <span>考试设计</span>
+                                                <i class="fa fa-caret-down" aria-hidden="true" style="font-style: normal;margin-right: 5px;"></i>
+                                            </a>
+                                            <ul class="status-box" id="item-bot-1" style="left: 0;">
+                                                <li><a href="">考试1</a></li>
+                                                <li><a href="">考试2</a></li>
+                                                <li><a href="">考试3</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="left process-1">
+                                        <div class="spinner-list">
+                                            <a href="" class="spinner-list-a">
+                                                <i class="icon test-icon"></i>
+                                                <span>发送考试</span>
+                                                <i class="fa fa-caret-down" aria-hidden="true" style="font-style: normal;margin-right: 5px;"></i>
+                                            </a>
+                                            <ul class="status-box" id="item-bot-2" style="left: 0">
+                                                <li><a href="">发送1</a></li>
+                                                <li><a href="">发送2</a></li>
+                                                <li><a href="">发送3</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="left process-1">
+                                        <div class="spinner-list">
+                                            <a href="" class="spinner-list-a">
+                                                <i class="icon score-icon"></i>
+                                                <span>成绩&查询</span>
+                                                <i class="fa fa-caret-down" aria-hidden="true" style="font-style: normal;margin-right: 5px;"></i>
+                                            </a>
+                                            <ul class="status-box" id="item-bot-3" style="left: 0">
+                                                <li><a href="">成绩功能1</a></li>
+                                                <li><a href="">成绩功能2</a></li>
+                                                <li><a href="">成绩功能3</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="right operation-box">
+                                    <a href="">
+                                        <i class="fa fa-wifi" aria-hidden="true"></i>
+                                        <span style="color: green;font-weight: bold;">已发布</span>
+                                    </a>
+                                    <a href="">
+                                        <i class="fa fa-play" aria-hidden="true"></i>
+                                        <span>开启</span>
+                                    </a>
+                                    <a href="">
+                                        <i class="fa fa-stop-circle" aria-hidden="true"></i>
+                                        <span>关闭</span>
+                                    </a>
+                                    <a href="">
+                                        <i class="fa fa-clipboard" aria-hidden="true"></i>
+                                        <span>复制</span>
+                                    </a>
+                                    <a href="">
+                                        <i class="fa fa-trash" aria-hidden="true"></i>
+                                        <span>删除</span>
+                                    </a>
+                                    <a href="">
+                                        <i class="fa fa-exclamation" aria-hidden="true"></i>
+                                        <span>提醒</span>
+                                    </a>
+                                </div>
+                            </dd>
+                        </dl>
+
+
+                    </div>
+                    <div style="width: 100%;text-align: right"><a href="{% url 'app01:index' %}"><button type="button" class="btn btn-info">返回</button></a></div>
+                    {#              对应文件夹的内容                   #}
+                    <div class="content-list hide" id="menu-folder">
+                        <h3>文件夹 暂无需求，后续更新，如急需，请联系作者</h3>
+                    </div>
+                    {# 回收站对应内容 #}
+                    <div class="content-list hide" id="menu-bin">
+                        <h3>回收站暂无需求，后续更新，如急需，请联系作者</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/jquery-3.4.1.js"></script>
+    <script>
+        //退出
+        $("#quit").click(function () {
+           location.href='/app01/logout/'
+        });
+        //左面菜单点击效果(此处需要优化)
+        $(".folder-btn").click(function () {
+            $(".folder-btn").removeClass("cur");
+            $(this).addClass("cur");
+        });
+        //左面菜单显示相应内容
+        $("#paper").click(function () {
+            $("#menu-paper").removeClass("hide");
+            $("#menu-folder").addClass("hide");
+            $("#menu-bin").addClass("hide");
+        });
+        $("#folder").click(function () {
+            $("#menu-paper").addClass("hide");
+            $("#menu-folder").removeClass("hide");
+            $("#menu-bin").addClass("hide");
+        });
+        $("#bin").click(function () {
+            $("#menu-paper").addClass("hide");
+            $("#menu-folder").addClass("hide");
+            $("#menu-bin").removeClass("hide");
+        });
+        //搜索框
+        function search_over() {
+            $(".search-text").css("width","80px");
+            $(".search").addClass("search-active");
+        }
+        function search_out() {
+            $(".search").removeClass("search-active");
+            $(".search-text").css("width","50px");
+        }
+        //搜索状态框显示
+        $("#status").hover(function () {
+            $("#search-status").removeClass('hide');
+        },function () {
+            $("#search-status").addClass('hide');
+        })
+
+
+    </script>
+</body>
+</html>

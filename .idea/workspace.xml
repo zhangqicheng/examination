@@ -2,21 +2,87 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f7fba428-4cf4-42de-8428-d8b4e685eaeb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app01/templates/app01/info.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app01/migrations/0002_auto_20201026_1058.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app01/migrations/0003_auto_20201026_1130.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app01/migrations/0004_remove_userprofile_roles.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app01/migrations/0005_userprofile_roles.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app01/migrations/0006_auto_20201026_1202.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app01/migrations/0007_remove_userprofile_roles.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app01/migrations/0008_userprofile_roles.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app01/static/app01/css/base.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app01/static/app01/css/writepaper.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app01/templates/app01/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app01/templates/app01/score.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app01/templates/app01/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app01/templates/app01/test_process.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app01/templates/app01/writepaper.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/teacher/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/teacher/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/teacher/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/teacher/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/teacher/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/teacher/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/teacher/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/teacher/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/脚本/a.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/脚本/chromedriver.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/脚本/file/样本.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/脚本/读取excel表格.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/脚本/资产表单填写自动化/chromedriver.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/脚本/资产表单填写自动化/file/样本.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/脚本/资产表单填写自动化/自动化脚本.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/脚本/资产表单填写自动化/表单填写自动化.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/examination.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/examination.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app01/md/xxx.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app01/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app01/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app01/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app01/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/app01/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app01/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/app01/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app01/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/app01/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app01/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app01/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app01/static/app01/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/app01/static/app01/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app01/static/app01/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/app01/static/app01/css/login.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app01/templates/app01/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app01/templates/app01/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app01/templates/app01/info.html" beforeDir="false" afterPath="$PROJECT_DIR$/app01/templates/app01/info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app01/templates/app01/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/app01/templates/app01/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app01/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/app01/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app01/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app01/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app01/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app01/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/examination/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/examination/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/conf/fastcgi.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/conf/fastcgi_params" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/conf/koi-utf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/conf/koi-win" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/conf/mime.types" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/conf/nginx.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/conf/scgi_params" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/conf/uwsgi_params" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/conf/win-utf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/contrib/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/contrib/geo2nginx.pl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/contrib/unicode2nginx/koi-utf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/contrib/unicode2nginx/unicode-to-nginx.pl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/contrib/unicode2nginx/win-utf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/contrib/vim/ftdetect/nginx.vim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/contrib/vim/ftplugin/nginx.vim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/contrib/vim/indent/nginx.vim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/contrib/vim/syntax/nginx.vim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/docs/CHANGES" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/docs/CHANGES.ru" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/docs/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/docs/OpenSSL.LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/docs/PCRE.LICENCE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/docs/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/docs/zlib.LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/html/50x.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/html/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/logs/access.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/logs/error.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/logs/nginx.pid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/nginx.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rbac/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/rbac/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rbac/migrations/0002_auto_20201012_2216.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/rbac/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/rbac/models.py" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,146 +94,21 @@
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app01/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="44" column="5" lean-forward="true" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
-              <folding>
-                <element signature="e#0#65#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app01/templates/app01/info.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
-              <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app01/forms.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/examination/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4170">
-              <caret line="140" column="30" selection-start-line="140" selection-start-column="18" selection-end-line="140" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app01/templates/app01/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="Python Script" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/app01/md/xxx.py" />
-        <option value="$PROJECT_DIR$/rbac/middleware/rbac.py" />
-        <option value="$PROJECT_DIR$/rbac/models.py" />
-        <option value="$PROJECT_DIR$/rbac/service/init_permission.py" />
-        <option value="$PROJECT_DIR$/examination/settings.py" />
-        <option value="$PROJECT_DIR$/app01/tests.py" />
-        <option value="$PROJECT_DIR$/app01/templates/app01/index.html" />
-        <option value="$PROJECT_DIR$/app01/views.py" />
-        <option value="$PROJECT_DIR$/app01/templates/app01/info.html" />
-        <option value="$PROJECT_DIR$/app01/forms.py" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="width" value="1366" />
-    <option name="height" value="768" />
-  </component>
   <component name="ProjectId" id="1i7N7T8Kzek9yUu4Cd3XH2d5cRO" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="examination" type="b2602c69:ProjectViewProjectNode" />
-              <item name="examination" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="examination" type="b2602c69:ProjectViewProjectNode" />
-              <item name="examination" type="462c0819:PsiDirectoryNode" />
-              <item name="app01" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="examination" type="b2602c69:ProjectViewProjectNode" />
-              <item name="examination" type="462c0819:PsiDirectoryNode" />
-              <item name="app01" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="examination" type="b2602c69:ProjectViewProjectNode" />
-              <item name="examination" type="462c0819:PsiDirectoryNode" />
-              <item name="app01" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="app01" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="examination" type="b2602c69:ProjectViewProjectNode" />
-              <item name="examination" type="462c0819:PsiDirectoryNode" />
-              <item name="examination" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="examination" type="b2602c69:ProjectViewProjectNode" />
-              <item name="examination" type="462c0819:PsiDirectoryNode" />
-              <item name="rbac" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="examination" type="b2602c69:ProjectViewProjectNode" />
-              <item name="examination" type="462c0819:PsiDirectoryNode" />
-              <item name="rbac" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -182,34 +123,112 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.vagrant" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ZQC\github远程项目\examination\脚本" />
       <recent name="D:\ZQC\examination\app01\static\app01\images" />
       <recent name="D:\ZQC\examination\static" />
       <recent name="D:\ZQC\examination\app01\static\app01" />
       <recent name="D:\ZQC\examination\app01\static\app01\css" />
-      <recent name="D:\ZQC\examination\app01" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\ZQC\github远程项目\examination\app01\static\app01\images" />
+      <recent name="D:\ZQC\github远程项目\examination\脚本\资产表单填写自动化" />
       <recent name="D:\ZQC\examination\app01\static\app01\images" />
       <recent name="D:\ZQC\examination\app01\static\app01" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager" selected="Python.tests">
+    <configuration name="自动化脚本 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="examination" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/脚本" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/脚本/自动化脚本.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="表单填写自动化 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="examination" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/脚本/资产表单填写自动化" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/脚本/资产表单填写自动化/表单填写自动化.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="表单填写自动化" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="examination" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/脚本" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="D:\ZQC\github远程项目\examination\脚本\资产表单填写自动化\表单填写自动化.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="a" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="examination" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/脚本" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/脚本/a.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="tests" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="examination" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -240,7 +259,7 @@
         <env name="PYTHONUNBUFFERED" value="1" />
         <env name="DJANGO_SETTINGS_MODULE" value="examination.settings" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="D:\Anaconda3\envs\tfenv\python.exe" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -256,9 +275,19 @@
       <option name="customRunCommand" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Django server.examination" />
+      <item itemvalue="Python.a" />
+      <item itemvalue="Python.tests" />
+      <item itemvalue="Python.自动化脚本 (1)" />
+      <item itemvalue="Python.表单填写自动化" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.tests" />
+        <item itemvalue="Python.表单填写自动化" />
+        <item itemvalue="Python.自动化脚本 (1)" />
+        <item itemvalue="Python.a" />
       </list>
     </recent_temporary>
   </component>
@@ -293,186 +322,110 @@
       <workItem from="1602503688690" duration="1270000" />
       <workItem from="1602505097851" duration="9205000" />
       <workItem from="1602554185908" duration="7491000" />
+      <workItem from="1602637616043" duration="6416000" />
+      <workItem from="1602721761952" duration="28461000" />
+      <workItem from="1603067267670" duration="13188000" />
+      <workItem from="1603155341882" duration="2613000" />
+      <workItem from="1603173416974" duration="924000" />
+      <workItem from="1603176503416" duration="1868000" />
+      <workItem from="1603179105430" duration="3557000" />
+      <workItem from="1603328037525" duration="23336000" />
+      <workItem from="1603672961709" duration="287000" />
+      <workItem from="1603673257266" duration="59000" />
+      <workItem from="1579999724163" duration="84000" />
+      <workItem from="1603673477963" duration="915000" />
+      <workItem from="1603674401971" duration="126000" />
+      <workItem from="1603674622435" duration="66000" />
+      <workItem from="1603674791279" duration="149000" />
+      <workItem from="1603675000618" duration="48000" />
+      <workItem from="1603675085222" duration="214000" />
+      <workItem from="1603675396401" duration="183000" />
+      <workItem from="1603675587004" duration="12643000" />
+      <workItem from="1603693741683" duration="6924000" />
+      <workItem from="1603759348188" duration="12609000" />
+      <workItem from="1603784972160" duration="6565000" />
+      <workItem from="1603791879953" duration="22000" />
+      <workItem from="1603845001224" duration="22226000" />
+      <workItem from="1603935604810" duration="11623000" />
+      <workItem from="1603958055011" duration="6884000" />
+      <workItem from="1604276751786" duration="365000" />
+      <workItem from="1604277129440" duration="20128000" />
+      <workItem from="1604364135829" duration="14927000" />
+      <workItem from="1604456669628" duration="15093000" />
+      <workItem from="1604539134440" duration="17562000" />
     </task>
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17966000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13615733" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3295082" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.36557376" />
-      <window_info anchor="bottom" id="Python Console" order="12" weight="0.3295082" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
-    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="173" y="84" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601871888943">
+    <state x="173" y="84" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602749810540">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="173" y="84" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.860@0.0.1440.860" timestamp="1601871888943" />
-    <state x="499" y="184" key="FileChooserDialogImpl" timestamp="1602235394070">
+    <state x="173" y="84" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.860@0.0.1440.860" timestamp="1602749810540" />
+    <state x="499" y="184" key="FileChooserDialogImpl" timestamp="1603675098849">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="499" y="184" key="FileChooserDialogImpl/0.0.1440.860@0.0.1440.860" timestamp="1602235394070" />
-    <state width="1379" height="212" key="GridCell.Tab.0.bottom" timestamp="1602495097163">
+    <state x="499" y="184" key="FileChooserDialogImpl/0.0.1440.860@0.0.1440.860" timestamp="1603675098849" />
+    <state width="1397" height="222" key="GridCell.Tab.0.bottom" timestamp="1604482409404">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="1379" height="212" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1602495097163" />
-    <state width="1379" height="212" key="GridCell.Tab.0.center" timestamp="1602495097163">
+    <state width="1397" height="222" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1604482409404" />
+    <state width="1397" height="222" key="GridCell.Tab.0.center" timestamp="1604482409404">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="1379" height="212" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1602495097163" />
-    <state width="1379" height="212" key="GridCell.Tab.0.left" timestamp="1602495097163">
+    <state width="1397" height="222" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1604482409404" />
+    <state width="1397" height="222" key="GridCell.Tab.0.left" timestamp="1604482409404">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="1379" height="212" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1602495097163" />
-    <state width="1379" height="212" key="GridCell.Tab.0.right" timestamp="1602495097163">
+    <state width="1397" height="222" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1604482409404" />
+    <state width="1397" height="222" key="GridCell.Tab.0.right" timestamp="1604482409404">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="1379" height="212" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1602495097163" />
-    <state x="400" y="252" key="com.intellij.ide.util.TipDialog" timestamp="1602462475346">
+    <state width="1397" height="222" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1604482409404" />
+    <state width="1379" height="264" key="GridCell.Tab.1.bottom" timestamp="1602729384158">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="400" y="252" key="com.intellij.ide.util.TipDialog/0.0.1440.860@0.0.1440.860" timestamp="1602462475346" />
-    <state x="383" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1602494847117">
+    <state width="1379" height="264" key="GridCell.Tab.1.bottom/0.0.1440.860@0.0.1440.860" timestamp="1602729384158" />
+    <state width="1379" height="264" key="GridCell.Tab.1.center" timestamp="1602729384158">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="383" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1440.860@0.0.1440.860" timestamp="1602494847117" />
+    <state width="1379" height="264" key="GridCell.Tab.1.center/0.0.1440.860@0.0.1440.860" timestamp="1602729384158" />
+    <state width="1379" height="264" key="GridCell.Tab.1.left" timestamp="1602729384158">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state width="1379" height="264" key="GridCell.Tab.1.left/0.0.1440.860@0.0.1440.860" timestamp="1602729384158" />
+    <state width="1379" height="264" key="GridCell.Tab.1.right" timestamp="1602729384158">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state width="1379" height="264" key="GridCell.Tab.1.right/0.0.1440.860@0.0.1440.860" timestamp="1602729384158" />
+    <state x="220" y="61" key="SettingsEditor" timestamp="1603675297982">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="220" y="61" key="SettingsEditor/0.0.1440.860@0.0.1440.860" timestamp="1603675297982" />
+    <state x="400" y="254" key="com.intellij.ide.util.TipDialog" timestamp="1604539135004">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="400" y="254" key="com.intellij.ide.util.TipDialog/0.0.1440.860@0.0.1440.860" timestamp="1604539135004" />
+    <state x="271" y="165" width="895" height="530" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1602729381630">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="271" y="165" width="895" height="530" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1440.860@0.0.1440.860" timestamp="1602729381630" />
+    <state x="383" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1604557842464">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="383" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1440.860@0.0.1440.860" timestamp="1604557842464" />
     <state x="441" y="330" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1602299354527">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="441" y="330" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1440.860@0.0.1440.860" timestamp="1602299354527" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/examination$tests.coverage" NAME="tests Coverage Results" MODIFIED="1602495097157" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app01" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/rbac/apps.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examination/wsgi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-241" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app01/md/xxx.py" />
-    <entry file="file://$PROJECT_DIR$/rbac/middleware/rbac.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="19" column="47" lean-forward="true" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app01/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rbac/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app01/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examination/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4170">
-          <caret line="140" column="30" selection-start-line="140" selection-start-column="18" selection-end-line="140" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app01/templates/app01/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rbac/service/init_permission.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app01/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-310" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app01/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="44" column="5" lean-forward="true" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#65#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app01/templates/app01/info.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/TF/Anaconda3/envs/tfenv/Lib/site-packages/django/forms/fields.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4194">
-          <caret line="58" column="41" selection-start-line="58" selection-start-column="41" selection-end-line="58" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app01/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
+    <SUITE FILE_PATH="coverage/examination$excel.coverage" NAME="读取excel表格 Coverage Results" MODIFIED="1602742163849" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/脚本" />
+    <SUITE FILE_PATH="coverage/examination$tests.coverage" NAME="tests Coverage Results" MODIFIED="1604479451032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app01" />
+    <SUITE FILE_PATH="coverage/examination$.coverage" NAME="表单填写自动化 Coverage Results" MODIFIED="1603328601664" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/脚本" />
+    <SUITE FILE_PATH="coverage/examination$__1_.coverage" NAME="表单填写自动化 (1) Coverage Results" MODIFIED="1603356571510" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/脚本/资产表单填写自动化" />
+    <SUITE FILE_PATH="coverage/examination$a.coverage" NAME="a Coverage Results" MODIFIED="1602743289085" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/脚本" />
   </component>
 </project>

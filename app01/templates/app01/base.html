@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/static/bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="/static/app01/css/base.css">
+    {% block css %}{% endblock %}
+    <title>{% block title %}在线考试系统{% endblock %}</title>
+</head>
+<body>
+    <div class="header">
+        <div class="wrap">
+            <div class="logo">
+                <span>在线考试系统</span>
+            </div>
+            <div class="quit">
+                <span style="font-size: 16px;">{{ request.user.username }}:</span>
+                <span style="font-size: 16px;">{{ request.user.roles.first.title }}</span>
+                <button type="button" id="quit" class="btn btn-danger" style="margin-left: 10px">退出</button>
+            </div>
+        </div>
+    </div>
+    {% block show %}
+
+    {% endblock %}
+
+    <script src="/static/jquery-3.4.1.js"></script>
+    <script>
+    $("#quit").click(function () {
+       location.href='/app01/logout/'
+    });
+    </script>
+    {% block js %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,56 @@
+{% extends 'app01/base.html' %}
+{% block title %}考试安排{% endblock %}
+{% block show %}
+    <div class="main" style="width: 800px;margin: 0 auto;text-align: center">
+        <h3>考试安排</h3>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <td>序号</td>
+                    <td>科目</td>
+                    <td>时间</td>
+                    <td>状态</td>
+                    <td>操作</td>
+            </thead>
+            <tbody>
+                {% for paper in test_paper %}
+                <tr>
+                    <td>{{ forloop.counter }}</td>
+                    <td>{{ paper.subject }}</td>
+                    <td>{{ paper.examtime }}</td>
+                    {% if user.roles.first.title == '学生' %}
+                        {% if paper.status == '1' %}
+                        <td style="color: forestgreen">正在进行</td>
+                        <td><a href="{% url 'app01:testprocess' paper.id %}">开始考试</a></td>
+                        {% else %}
+                        <td style="color: red">已关闭</td>
+                        <td><a href="{% url 'app01:score'%}">查看成绩</a></td>
+                        {% endif %}
+                    {% else %}
+                        {% if paper.status == '1' %}
+                        <td style="color: forestgreen">正在进行</td>
+                        <td><a href="{% url 'app01:testprocess' paper.id %}">模拟考试</a>
+                            |
+                            <a href="{% url "app01:closepaper" paper.id %}">关闭试卷</a>
+                        </td>
+                        {% else %}
+                        <td style="color: red">已关闭</td>
+                        <td><a href="{% url 'app01:openpaper' paper.id %}">开启试卷</a></td>
+                        {% endif %}
+                    {% endif %}
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <div class="back" style="width: 100%;text-align: right">
+            <button type="button" id='back' class="btn btn-info">返回</button>
+        </div>
+    </div>
+{% endblock %}
+{% block js %}
+    <script>
+        $("#back").click(function () {
+            location.href='/app01/index/'
+        })
+    </script>
+{% endblock %}

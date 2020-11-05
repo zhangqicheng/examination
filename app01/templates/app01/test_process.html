@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>正式考试</title>
+    <link rel="stylesheet" href="/static/bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/jquery-3.4.1.js">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul li{
+            list-style: none;
+        }
+        input{
+            margin: 0;
+        }
+        .option li{
+            height: 30px;
+            line-height: 30px;
+        }
+
+        .test_title i{
+            font-size: 16px;
+            background-color: red;
+            border-radius: 50%;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            text-align: center;
+            line-height: 20px;
+        }
+        .test_content{
+            height: 30px;
+            line-height: 35px;
+        }
+        .rubric{
+            border-top: 2px solid #ebebeb;
+            border-bottom: 3px solid #ebebeb;
+            border-left: 1px solid #ebebeb;
+            border-right: 1px solid #ebebeb;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="main" style="width: 800px;margin: 0 auto;">
+        {% if request.user.roles.first.title == '教师' %}
+            <div style="position: fixed;left: 10px;top: 10px">
+                <a href="{% url 'app01:test' %}"><button type="button" class="btn btn-success">结束模拟</button></a>
+            </div>
+        {% endif %}
+        <h3 style="text-align: center">{{ paper.subject }}考试</h3>
+        <form action="{% url 'app01:testprocess' paper.id %}" method="POST">
+        {% csrf_token %}
+        <h4 style="color: #00B895;">单项选择</h4>
+        {% for single in paper_list_single %}
+            <div class="rubric">
+                <div style="position: absolute;left: 10px;top: 8px;width: 20px;height: 20px;border-radius: 50%;background-color: #9fcdff;text-align: center;color: white"><span>{{ forloop.counter }}</span></div>
+                <ul style="width: 90%;margin: 0 auto">
+                    <div class="test_content">
+                        <span>({{ single.score }}分)</span>&nbsp;&nbsp;&nbsp;<strong>{{ single.title }}</strong>
+                    </div>
+                    <div class="hr" style="width: 100%;height: 2px;background-color: #f5f5f5;margin: 5px auto 5px"></div>
+                    <ul class="option">
+                        <li><input type="radio" name={{ single.id }} value="A">&nbsp;&nbsp;A.{{ single.optionA }}</li>
+                        <li><input type="radio" name={{ single.id }} value="B">&nbsp;&nbsp;B.{{ single.optionB }}</li>
+                        <li><input type="radio" name={{ single.id }} value="C">&nbsp;&nbsp;C.{{ single.optionC }}</li>
+                        <li><input type="radio" name={{ single.id }} value="D">&nbsp;&nbsp;D.{{ single.optionD }}</li>
+                    </ul>
+                </ul>
+            </div>
+        {% endfor %}
+
+
+        <h4 style="color: #00B895;">多项选择</h4>
+        <div class="rubric">
+            <div style="position: absolute;left: 10px;top: 8px;width: 20px;height: 20px;border-radius: 50%;background-color: #9fcdff;text-align: center;color: white"><span>1</span></div>
+            <ul style="width: 90%;margin: 0 auto">
+                <div class="test_content">
+                    <span>(10分)</span>&nbsp;&nbsp;&nbsp;<strong>数据库选择题</strong>
+                </div>
+                <div class="hr" style="width: 100%;height: 2px;background-color: #f5f5f5;margin: 5px auto 5px"></div>
+                <ul class="option">
+                    <li><input type="checkbox" name="sql">&nbsp;&nbsp;A.sql语句是啥</li>
+                    <li><input type="checkbox" name="sql">&nbsp;&nbsp;B.python语句是啥</li>
+                    <li><input type="checkbox" name="sql">&nbsp;&nbsp;C.c语句是啥</li>
+                    <li><input type="checkbox" name="sql">&nbsp;&nbsp;D.你猜语句是啥</li>
+                </ul>
+            </ul>
+        </div>
+
+
+        <h4 style="color: #00B895;">主观题</h4>
+        {% for subject in paper_list_subject %}
+            <div class="rubric">
+                <div style="position: absolute;left: 10px;top: 8px;width: 20px;height: 20px;border-radius: 50%;background-color: #9fcdff;text-align: center;color: white"><span>{{ forloop.counter }}</span></div>
+                <ul style="width: 90%;margin: 0 auto">
+                    <div class="test_content">
+                        <span>({{ subject.score }}分)</span>&nbsp;&nbsp;&nbsp;<strong>{{ subject.title }}</strong>
+                    </div>
+                    <div class="hr" style="width: 100%;height: 2px;background-color: #f5f5f5;margin: 5px auto 5px"></div>
+                    <ul class="option">
+                        <textarea name={{ subject.id }} id={{ subject.id }} cols=100% rows="10" class="form-control"></textarea>
+                    </ul>
+                </ul>
+            </div>
+        {% endfor %}
+
+            <div style="width:95%;height:100px;text-align: right;line-height: 50px">
+            <input type="button" id="submit" class="btn btn-success" value="完成答卷">
+            </div>
+    </form>
+    </div>
+    <script src="/static/jquery-3.4.1.js"></script>
+    <script>
+        $("#submit").click(function () {
+            var single={};
+            var subject={};
+
+            //获取提交的单项选择
+            {% for paper_single in paper_list_single %}
+                var papersingle=$('input:radio[name={{ paper_single.id }}]:checked').val();
+                single[{{ paper_single.id }}]=papersingle;
+            {% endfor %}
+
+            //获取提交的主观题
+            {% for paper_subject in paper_list_subject %}
+                var papersubject=$("#"+{{ paper_subject.id }}).val();
+                subject[{{ paper_subject.id }}]=papersubject;
+            {% endfor %}
+
+            console.log(single);
+            console.log(subject);
+
+            //ajax数据传输
+            $.ajax({
+                url:'{% url "app01:testprocess" paper.id %}',
+                type:'post',
+                dataType:'JSON',
+                data:{
+                    'csrfmiddlewaretoken':$("[name='csrfmiddlewaretoken']").val(),
+                    'single':JSON.stringify(single),
+                    'subject':JSON.stringify(subject),
+                },
+                success:function (data) {
+                    console.log(data);
+                    alert(data);
+                    location.href='{% url "app01:index" %}'
+                },
+                error:function (data) {
+                    console.log("出错了")
+                }
+            })
+
+        })
+    </script>
+</body>
+</html>

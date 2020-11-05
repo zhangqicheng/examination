@@ -29,7 +29,7 @@ class Role(models.Model):
         verbose_name_plural=verbose_name
         db_table='rbac_role'
 
-class UserInfo(models.Model):
+class UserInfo():
     """
     用户表
     """

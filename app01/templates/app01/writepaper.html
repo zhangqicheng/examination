@@ -1,0 +1,657 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/static/bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="/static/app01/css/base.css">
+    <link rel="stylesheet" href="/static/app01/css/writepaper.css">
+    <script src="/static/jquery-3.4.1.js"></script>
+    <title>编写试卷</title>
+</head>
+<body>
+    <div class="header" style="position: fixed;top: 0;left: 0;z-index: 99;">
+        <div class="left">
+            <span class="kscount">
+                <span>
+                    试卷总分:
+                    <strong>0</strong>
+                </span>
+                &nbsp&nbsp|&nbsp&nbsp
+                <span>
+                    试卷题目数:
+                    <span>0</span>
+                </span>
+            </span>
+        </div>
+        <div class="right" style="font-size: 0;">
+            <a href="" class="newBtn preview">
+                <i class="fa fa-eye" aria-hidden="true"></i>
+                <span>预览</span>
+            </a>
+            <a href="" class="newBtn overedit">
+                <i></i>
+                <span>完成编辑</span>
+            </a>
+        </div>
+    </div>
+    {# 主内容 #}
+    <div class="paper-create">
+        <div class="paper-table">
+            <ul class="table-style">
+                <li class="open">
+                    <div class="open-title">
+                        <i class="fa fa-address-book iconfont" aria-atomic="true"></i>
+                        <span>考生信息</span>
+                    </div>
+                    <ul class="navlist">
+                        <li>
+                            <a href="">
+                                <i class="fa fa-car" aria-hidden="true"></i>
+                                <span>姓名</span></a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa fa-blind" aria-hidden="true"></i>
+                                <span>基本信息</span></a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa fa-fighter-jet" aria-hidden="true"></i>
+                                <span>部门</span></a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa fa-key" aria-hidden="true"></i>
+                                <span>其他信息</span></a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="open">
+                    <div class="open-title">
+                        <i class="fa fa-address-book iconfont" aria-atomic="true"></i>
+                        <span>考试题型</span>
+                    </div>
+                    <ul class="navlist">
+                        <li>
+                            <a id="uniterm">
+                                <i class="fa fa-car" aria-hidden="true"></i>
+                                <span>考试单选</span></a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa fa-blind" aria-hidden="true"></i>
+                                <span>考试判断</span></a>
+                        </li>
+                        <li>
+                            <a id="mulsec">
+                                <i class="fa fa-fighter-jet" aria-hidden="true"></i>
+                                <span>考试多选</span></a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa fa-key" aria-hidden="true"></i>
+                                <span>单项填空</span></a>
+                        </li>
+                        <li>
+                            <a id="subject">
+                                <i class="fa fa-key" aria-hidden="true"></i>
+                                <span>简答题</span></a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa fa-key" aria-hidden="true"></i>
+                                <span>完形填空</span></a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="open">
+                    <div class="open-title">
+                        <i class="fa fa-address-book iconfont" aria-atomic="true"></i>
+                        <span>其他题型</span>
+                    </div>
+                    <ul class="navlist">
+                        <li>
+                            <a href="">
+                                <i class="fa fa-car" aria-hidden="true"></i>
+                                <span>普通单选</span></a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa fa-blind" aria-hidden="true"></i>
+                                <span>普通多选</span></a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa fa-fighter-jet" aria-hidden="true"></i>
+                                <span>填空题</span></a>
+                        </li>
+                        <li>
+                             <a href="">
+                                <i class="fa fa-key" aria-hidden="true"></i>
+                                <span>未知题型</span></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="paper-box">
+            <div class="paper-edit">
+                <div class="paper-head">
+                    <h3>数据库原理</h3>
+                    <div class="paper-desc">添加问卷说明（可选）</div>
+                </div>
+                <div class="paper-question">
+                {#          js生成页面              #}
+                <script>
+                    $("#uniterm").click(function () {
+                        $('.paper-question').append("\t\t\t\t\t<div class=\"paper-preview\">\n" +
+                            "                        <div class=\"question-title\">\n" +
+                            "                            <strong>1.</strong>&nbsp;&nbsp;\n" +
+                            "                            <strong id=\"radio_title-1\">哪个sql语句是正确的?</strong>\n" +
+                            "                            <span style=\"color: rgb(239, 160, 48);\">(分值:5分)</span>\n" +
+                            "                        </div>\n" +
+                            "                        <div class=\"question-radio\" id=\"question-radio\">\n" +
+                            "                            <ul>\n" +
+                            "                                <li class=\"question_active\">\n" +
+                            "                                    <input type=\"radio\" id=\"hh\">\n" +
+                            "                                    <span>选项1</span>&nbsp;&nbsp;\n" +
+                            "                                    <label for=\"\">(正确答案)</label>\n" +
+                            "                                </li>\n" +
+                            "                                <li class=\"\">\n" +
+                            "                                    <input type=\"radio\">\n" +
+                            "                                    <span>选项2</span>&nbsp;&nbsp;\n" +
+                            "                                    <label for=\"\"></label>\n" +
+                            "                                </li>\n" +
+                            "                                <li class=\"\">\n" +
+                            "                                    <input type=\"radio\">\n" +
+                            "                                    <span>选项3</span>&nbsp;&nbsp;\n" +
+                            "                                    <label for=\"\"></label>\n" +
+                            "                                </li>\n" +
+                            "                                <li class=\"\">\n" +
+                            "                                    <input type=\"radio\">\n" +
+                            "                                    <span>选项4</span>&nbsp;&nbsp;\n" +
+                            "                                    <label for=\"\"></label>\n" +
+                            "                                </li>\n" +
+                            "                            </ul>\n" +
+                            "                        </div>\n" +
+                            "                        <div class=\"radio-edit\" id=\"radio-edit\">\n" +
+                            "                            <div class=\"icon\"></div>\n" +
+                            "                            <div class=\"radio-container\">\n" +
+                            "                                <textarea name=\"\" id=\"radio-1\"  rows=\"3\" class=\"form-control\" placeholder=\"请输入标题\"></textarea>\n" +
+                            "                            </div>\n" +
+                            "                            <div class=\"radio-container\">\n" +
+                            "                                <span><b>题目分数:</b></span>&nbsp;&nbsp;\n" +
+                            "                                <select name=\"\" id=\"\" style=\"overflow: scroll\">\n" +
+                            "                                    <option value=\"\">1</option>\n" +
+                            "                                    <option value=\"\">2</option>\n" +
+                            "                                    <option value=\"\">2.5</option>\n" +
+                            "                                    <option value=\"\">3</option>\n" +
+                            "                                    <option value=\"\">3.5</option>\n" +
+                            "                                    <option value=\"\">4</option>\n" +
+                            "                                    <option value=\"\">4.5</option>\n" +
+                            "                                    <option value=\"\">5</option>\n" +
+                            "                                    <option value=\"\">5.5</option>\n" +
+                            "                                    <option value=\"\">6</option>\n" +
+                            "                                    <option value=\"\">10</option>\n" +
+                            "                                    <option value=\"\">10.5</option>\n" +
+                            "                                    <option value=\"\">11</option>\n" +
+                            "                                    <option value=\"\">11.5</option>\n" +
+                            "                                </select>\n" +
+                            "                            </div>\n" +
+                            "                            <div class=\"radio-container\">\n" +
+                            "                                <table class=\"table table-hover table-striped\">\n" +
+                            "                                    <thead>\n" +
+                            "                                        <tr>\n" +
+                            "                                            <td style=\"text-align: left\">选项文字</td>\n" +
+                            "                                            <td>图片</td>\n" +
+                            "                                            <td>说明</td>\n" +
+                            "                                            <td>正确答案</td>\n" +
+                            "                                            <td>其他操作</td>\n" +
+                            "                                        </tr>\n" +
+                            "                                    </thead>\n" +
+                            "                                    <tbody>\n" +
+                            "                                        <tr>\n" +
+                            "                                            <td style=\"text-align: left\">\n" +
+                            "                                                <strong>A选项:</strong>\n" +
+                            "                                                <input type=\"text\" class=\"form-control\" style=\"display: inline-block;width: 70%\">\n" +
+                            "                                                &nbsp;<span>插入</span><span>删除</span>\n" +
+                            "                                            </td>\n" +
+                            "                                            <td><span>图片</span></td>\n" +
+                            "                                            <td><span>说明</span></td>\n" +
+                            "                                            <td><input type=\"checkbox\"></td>\n" +
+                            "                                            <td><span>xxx</span></td>\n" +
+                            "                                        </tr>\n" +
+                            "                                        <tr>\n" +
+                            "                                            <td style=\"text-align: left\">\n" +
+                            "                                                <strong>B选项:</strong>\n" +
+                            "                                                <input type=\"text\" class=\"form-control\" style=\"display: inline-block;width: 70%\">\n" +
+                            "                                                &nbsp;<span>插入</span><span>删除</span>\n" +
+                            "                                            </td>\n" +
+                            "                                            <td><span>图片</span></td>\n" +
+                            "                                            <td><span>说明</span></td>\n" +
+                            "                                            <td><input type=\"checkbox\"></td>\n" +
+                            "                                            <td><span>xxx</span></td>\n" +
+                            "                                        </tr>\n" +
+                            "                                    </tbody>\n" +
+                            "                                </table>\n" +
+                            "                            </div>\n" +
+                            "                            <div class=\"radio-container\">\n" +
+                            "                                <button class=\"btn btn-success\" value=\"完成编辑\" style=\"width: 100%;height: 40px;font-size: 16px;\">完成编辑</button>\n" +
+                            "                            </div>\n" +
+                            "                        </div>\n" +
+                            "                       \n" +
+                            "                    </div>")
+                    });
+                    $("#mulsec").click(function () {
+                        $(".paper-question").append("\t\t\t\t\t<div class=\"paper-preview\">\n" +
+                            "                        <div class=\"question-title\">\n" +
+                            "                            <strong>1.</strong>&nbsp;&nbsp;\n" +
+                            "                            <strong>哪个sql语句是正确的?</strong>\n" +
+                            "                            <span style=\"color: rgb(239, 160, 48);\">(分值:5分)</span>\n" +
+                            "                        </div>\n" +
+                            "                      \n" +
+                            "                        <div class=\"question-radio\" id=\"question-mul\">\n" +
+                            "                            <ul>\n" +
+                            "                                <li class=\"question_active\">\n" +
+                            "                                    <input type=\"checkbox\">\n" +
+                            "                                    <span>选项1</span>&nbsp;&nbsp;\n" +
+                            "                                    <label for=\"\">(正确答案)</label>\n" +
+                            "                                </li>\n" +
+                            "                                <li class=\"question_active\">\n" +
+                            "                                    <input type=\"checkbox\">\n" +
+                            "                                    <span>选项2</span>&nbsp;&nbsp;\n" +
+                            "                                    <label for=\"\">(正确答案)</label>\n" +
+                            "                                </li>\n" +
+                            "                                <li class=\"\">\n" +
+                            "                                    <input type=\"checkbox\">\n" +
+                            "                                    <span>选项3</span>&nbsp;&nbsp;\n" +
+                            "                                    <label for=\"\"></label>\n" +
+                            "                                </li>\n" +
+                            "                                <li class=\"\">\n" +
+                            "                                    <input type=\"checkbox\">\n" +
+                            "                                    <span>选项4</span>&nbsp;&nbsp;\n" +
+                            "                                    <label for=\"\"></label>\n" +
+                            "                                </li>\n" +
+                            "                            </ul>\n" +
+                            "                        </div>\n" +
+                            "                  \n" +
+                            "                        <div class=\"radio-edit\" id=\"mul-edit\">\n" +
+                            "                            <div class=\"icon\"></div>\n" +
+                            "                            <div class=\"radio-container\">\n" +
+                            "                                <textarea name=\"\" id=\"\" rows=\"3\" class=\"form-control\" placeholder=\"请输入标题\"></textarea>\n" +
+                            "                            </div>\n" +
+                            "                            <div class=\"radio-container\">\n" +
+                            "                                <span><b>题目分数:</b></span>&nbsp;&nbsp;\n" +
+                            "                                <select name=\"\" id=\"\" style=\"overflow: scroll\">\n" +
+                            "                                    <option value=\"\">1</option>\n" +
+                            "                                    <option value=\"\">2</option>\n" +
+                            "                                    <option value=\"\">2.5</option>\n" +
+                            "                                    <option value=\"\">3</option>\n" +
+                            "                                    <option value=\"\">3.5</option>\n" +
+                            "                                    <option value=\"\">4</option>\n" +
+                            "                                    <option value=\"\">4.5</option>\n" +
+                            "                                    <option value=\"\">5</option>\n" +
+                            "                                    <option value=\"\">5.5</option>\n" +
+                            "                                    <option value=\"\">6</option>\n" +
+                            "                                    <option value=\"\">10</option>\n" +
+                            "                                    <option value=\"\">10.5</option>\n" +
+                            "                                    <option value=\"\">11</option>\n" +
+                            "                                    <option value=\"\">11.5</option>\n" +
+                            "                                </select>\n" +
+                            "                            </div>\n" +
+                            "                            <div class=\"radio-container\">\n" +
+                            "                                <table class=\"table table-hover table-striped\">\n" +
+                            "                                    <thead>\n" +
+                            "                                        <tr>\n" +
+                            "                                            <td style=\"text-align: left\">选项文字</td>\n" +
+                            "                                            <td>图片</td>\n" +
+                            "                                            <td>说明</td>\n" +
+                            "                                            <td>正确答案</td>\n" +
+                            "                                            <td>其他操作</td>\n" +
+                            "                                        </tr>\n" +
+                            "                                    </thead>\n" +
+                            "                                    <tbody>\n" +
+                            "                                        <tr>\n" +
+                            "                                            <td style=\"text-align: left\">\n" +
+                            "                                                <strong>选项1:</strong>\n" +
+                            "                                                <input type=\"text\" class=\"form-control\" style=\"display: inline-block;width: 70%\">\n" +
+                            "                                                &nbsp;<span>插入</span><span>删除</span>\n" +
+                            "                                            </td>\n" +
+                            "                                            <td><span>图片</span></td>\n" +
+                            "                                            <td><span>说明</span></td>\n" +
+                            "                                            <td><input type=\"checkbox\"></td>\n" +
+                            "                                            <td><span>xxx</span></td>\n" +
+                            "                                        </tr>\n" +
+                            "                                        <tr>\n" +
+                            "                                            <td style=\"text-align: left\">\n" +
+                            "                                                <strong>选项2:</strong>\n" +
+                            "                                                <input type=\"text\" class=\"form-control\" style=\"display: inline-block;width: 70%\">\n" +
+                            "                                                &nbsp;<span>插入</span><span>删除</span>\n" +
+                            "                                            </td>\n" +
+                            "                                            <td><span>图片</span></td>\n" +
+                            "                                            <td><span>说明</span></td>\n" +
+                            "                                            <td><input type=\"checkbox\"></td>\n" +
+                            "                                            <td><span>xxx</span></td>\n" +
+                            "                                        </tr>\n" +
+                            "                                    </tbody>\n" +
+                            "                                </table>\n" +
+                            "                            </div>\n" +
+                            "                            <div class=\"radio-container\">\n" +
+                            "                                <button class=\"btn btn-success\" value=\"完成编辑\" style=\"width: 100%;height: 40px;font-size: 16px;\">完成编辑</button>\n" +
+                            "                            </div>\n" +
+                            "                        </div>\n" +
+                            "                    </div>")
+                    });
+                    $("#subject").click(function () {
+                        $(".paper-question").append("<div class=\"paper-preview\">\n" +
+                            "                        <div class=\"question-title\">\n" +
+                            "                            <strong>1.</strong>&nbsp;&nbsp;\n" +
+                            "                            <strong>哪个sql语句是正确的?</strong>\n" +
+                            "                            <span style=\"color: rgb(239, 160, 48);\">(分值:5分)</span>\n" +
+                            "                        </div>\n" +
+                            "                       \n" +
+                            "                        <div class=\"question-radio\" id=\"question-sub\">\n" +
+                            "                            <ul>\n" +
+                            "                                <textarea name=\"\" id=\"\" rows=\"5\" class=\"form-control\"></textarea>\n" +
+                            "                            </ul>\n" +
+                            "                        </div>\n" +
+                            "                        <div class=\"radio-edit\" id=\"sub-edit\">\n" +
+                            "                            <div class=\"icon\"></div>\n" +
+                            "                            <div class=\"radio-container\">\n" +
+                            "                                <textarea name=\"\" id=\"\" rows=\"3\" class=\"form-control\" placeholder=\"请输入标题\"></textarea>\n" +
+                            "                            </div>\n" +
+                            "                            <div class=\"radio-container\">\n" +
+                            "                                <span><b>题目分数:</b></span>&nbsp;&nbsp;\n" +
+                            "                                <select name=\"\" id=\"\" style=\"overflow: scroll\">\n" +
+                            "                                    <option value=\"\">1</option>\n" +
+                            "                                    <option value=\"\">2</option>\n" +
+                            "                                    <option value=\"\">2.5</option>\n" +
+                            "                                    <option value=\"\">3</option>\n" +
+                            "                                    <option value=\"\">3.5</option>\n" +
+                            "                                    <option value=\"\">4</option>\n" +
+                            "                                    <option value=\"\">4.5</option>\n" +
+                            "                                    <option value=\"\">5</option>\n" +
+                            "                                    <option value=\"\">5.5</option>\n" +
+                            "                                    <option value=\"\">6</option>\n" +
+                            "                                    <option value=\"\">10</option>\n" +
+                            "                                    <option value=\"\">10.5</option>\n" +
+                            "                                    <option value=\"\">11</option>\n" +
+                            "                                    <option value=\"\">11.5</option>\n" +
+                            "                                </select>\n" +
+                            "                            </div>\n" +
+                            "                            <div class=\"radio-container\">\n" +
+                            "                                <button class=\"btn btn-success\" value=\"完成编辑\" style=\"width: 100%;height: 40px;font-size: 16px;\" id=\"btn\">完成编辑</button>\n" +
+                            "                            </div>\n" +
+                            "                        </div>\n" +
+                            "                    </div>")
+                    })
+                </script>
+                    <div class="paper-preview hide">
+                        <div class="question-title">
+                            <strong>1.</strong>&nbsp;&nbsp;
+                            <strong>哪个sql语句是正确的?</strong>
+                            <span style="color: rgb(239, 160, 48);">(分值:5分)</span>
+                        </div>
+                        <div class="question-radio hide" id="question-radio">
+                            <ul>
+                                <li class="question_active">
+                                    <input type="radio">
+                                    <span>选项1</span>&nbsp;&nbsp;
+                                    <label for="">(正确答案)</label>
+                                </li>
+                                <li class="">
+                                    <input type="radio">
+                                    <span>选项2</span>&nbsp;&nbsp;
+                                    <label for=""></label>
+                                </li>
+                                <li class="">
+                                    <input type="radio">
+                                    <span>选项3</span>&nbsp;&nbsp;
+                                    <label for=""></label>
+                                </li>
+                                <li class="">
+                                    <input type="radio">
+                                    <span>选项4</span>&nbsp;&nbsp;
+                                    <label for=""></label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="question-radio hide" id="question-mul">
+                            <ul>
+                                <li class="question_active">
+                                    <input type="checkbox">
+                                    <span>选项1</span>&nbsp;&nbsp;
+                                    <label for="">(正确答案)</label>
+                                </li>
+                                <li class="question_active">
+                                    <input type="checkbox">
+                                    <span>选项2</span>&nbsp;&nbsp;
+                                    <label for="">(正确答案)</label>
+                                </li>
+                                <li class="">
+                                    <input type="checkbox">
+                                    <span>选项3</span>&nbsp;&nbsp;
+                                    <label for=""></label>
+                                </li>
+                                <li class="">
+                                    <input type="checkbox">
+                                    <span>选项4</span>&nbsp;&nbsp;
+                                    <label for=""></label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="question-radio hide" id="question-sub">
+                            <ul>
+                                <textarea name="" id="" rows="5" class="form-control"></textarea>
+                            </ul>
+                        </div>
+                        {#              单选          #}
+                        <div class="radio-edit hide" id="radio-edit">
+                            <div class="icon"></div>
+                            <div class="radio-container">
+                                <textarea name="" id=""  rows="3" class="form-control" placeholder="请输入标题"></textarea>
+                            </div>
+                            <div class="radio-container">
+                                <span><b>题目分数:</b></span>&nbsp;&nbsp;
+                                <select name="" id="" style="overflow: scroll">
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">2.5</option>
+                                    <option value="">3</option>
+                                    <option value="">3.5</option>
+                                    <option value="">4</option>
+                                    <option value="">4.5</option>
+                                    <option value="">5</option>
+                                    <option value="">5.5</option>
+                                    <option value="">6</option>
+                                    <option value="">10</option>
+                                    <option value="">10.5</option>
+                                    <option value="">11</option>
+                                    <option value="">11.5</option>
+                                </select>
+                            </div>
+                            <div class="radio-container">
+                                <table class="table table-hover table-striped">
+                                    <thead>
+                                        <tr>
+                                            <td style="text-align: left">选项文字</td>
+                                            <td>图片</td>
+                                            <td>说明</td>
+                                            <td>正确答案</td>
+                                            <td>其他操作</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td style="text-align: left">
+                                                <strong>A选项:</strong>
+                                                <input type="text" class="form-control" style="display: inline-block;width: 70%">
+                                                &nbsp;<span>插入</span><span>删除</span>
+                                            </td>
+                                            <td><span>图片</span></td>
+                                            <td><span>说明</span></td>
+                                            <td><input type="checkbox"></td>
+                                            <td><span>xxx</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align: left">
+                                                <strong>B选项:</strong>
+                                                <input type="text" class="form-control" style="display: inline-block;width: 70%">
+                                                &nbsp;<span>插入</span><span>删除</span>
+                                            </td>
+                                            <td><span>图片</span></td>
+                                            <td><span>说明</span></td>
+                                            <td><input type="checkbox"></td>
+                                            <td><span>xxx</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="radio-container">
+                                <button class="btn btn-success" value="完成编辑" style="width: 100%;height: 40px;font-size: 16px;">完成编辑</button>
+                            </div>
+                        </div>
+                        {#              多选          #}
+                        <div class="radio-edit hide" id="mul-edit">
+                            <div class="icon"></div>
+                            <div class="radio-container">
+                                <textarea name="" id="" rows="3" class="form-control" placeholder="请输入标题"></textarea>
+                            </div>
+                            <div class="radio-container">
+                                <span><b>题目分数:</b></span>&nbsp;&nbsp;
+                                <select name="" id="" style="overflow: scroll">
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">2.5</option>
+                                    <option value="">3</option>
+                                    <option value="">3.5</option>
+                                    <option value="">4</option>
+                                    <option value="">4.5</option>
+                                    <option value="">5</option>
+                                    <option value="">5.5</option>
+                                    <option value="">6</option>
+                                    <option value="">10</option>
+                                    <option value="">10.5</option>
+                                    <option value="">11</option>
+                                    <option value="">11.5</option>
+                                </select>
+                            </div>
+                            <div class="radio-container">
+                                <table class="table table-hover table-striped">
+                                    <thead>
+                                        <tr>
+                                            <td style="text-align: left">选项文字</td>
+                                            <td>图片</td>
+                                            <td>说明</td>
+                                            <td>正确答案</td>
+                                            <td>其他操作</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td style="text-align: left">
+                                                <strong>选项1:</strong>
+                                                <input type="text" class="form-control" style="display: inline-block;width: 70%">
+                                                &nbsp;<span>插入</span><span>删除</span>
+                                            </td>
+                                            <td><span>图片</span></td>
+                                            <td><span>说明</span></td>
+                                            <td><input type="checkbox"></td>
+                                            <td><span>xxx</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align: left">
+                                                <strong>选项2:</strong>
+                                                <input type="text" class="form-control" style="display: inline-block;width: 70%">
+                                                &nbsp;<span>插入</span><span>删除</span>
+                                            </td>
+                                            <td><span>图片</span></td>
+                                            <td><span>说明</span></td>
+                                            <td><input type="checkbox"></td>
+                                            <td><span>xxx</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="radio-container">
+                                <button class="btn btn-success" value="完成编辑" style="width: 100%;height: 40px;font-size: 16px;">完成编辑</button>
+                            </div>
+                        </div>
+                        {#              主观题          #}
+                        <div class="radio-edit hide" id="sub-edit">
+                            <div class="icon"></div>
+                            <div class="radio-container">
+                                <textarea name="" id="" rows="3" class="form-control" placeholder="请输入标题"></textarea>
+                            </div>
+                            <div class="radio-container">
+                                <span><b>题目分数:</b></span>&nbsp;&nbsp;
+                                <select name="" id="" style="overflow: scroll">
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">2.5</option>
+                                    <option value="">3</option>
+                                    <option value="">3.5</option>
+                                    <option value="">4</option>
+                                    <option value="">4.5</option>
+                                    <option value="">5</option>
+                                    <option value="">5.5</option>
+                                    <option value="">6</option>
+                                    <option value="">10</option>
+                                    <option value="">10.5</option>
+                                    <option value="">11</option>
+                                    <option value="">11.5</option>
+                                </select>
+                            </div>
+                            <div class="radio-container">
+                                <button class="btn btn-success" value="完成编辑" style="width: 100%;height: 40px;font-size: 16px;">完成编辑</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {#  遮罩层  #}
+    <div class="shadow"></div>
+    {#  模态对话框  #}
+    <div class="modal_paper">
+        <div class="modal_wrap">
+            <h3>创建考试试卷</h3>
+            <div class="form-group" style="margin-top: 35px;">
+                <input type="text" class="form-control" placeholder="请输入标题">
+            </div>
+            <div class="form-group" style="margin-top: 35px;">
+                <input type="button" class="btn btn-success" id="create" value="立即创建">
+                <input type="button" class="btn btn-danger" id="back" value="取消">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(function () {
+            $(".modal_paper").animate({left:'50%'},500);
+            $("#back").click(function () {
+                location.href="{% url 'app01:paper' %}"
+            });
+            $("#create").click(function () {
+                $(".modal_paper").addClass('hide');
+                $(".shadow").addClass('hide');
+            });
+            //单项选择对应操作
+            $(".paper-question").on("click",function () {
+                $("#radio-1").bind('input propertychange', function() {
+                    var a = $("#radio-1").val();
+                    console.log(a)
+                    $("#radio_title-1").text(a);
+                })
+            })
+
+        })
+
+    </script>
+</body>
+</html>

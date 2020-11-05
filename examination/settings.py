@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'app01.apps.App01Config',
+    'teacher.apps.TeacherConfig',
     'rbac.apps.RbacConfig',
 ]
 
@@ -50,7 +51,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'rbac.middleware.rbac.RbacMiddleware',
+    # 'rbac.middleware.rbac.RbacMiddleware',
 ]
 
 ROOT_URLCONF = 'examination.urls'
@@ -136,12 +137,21 @@ STATICFILES_DIRS=(
     os.path.join(BASE_DIR,'app01/static'),
 )
 
+#django自带用户权限认证
+AUTH_USER_MODEL = 'app01.UserProfile'
+
+#-------------------------------session配置相关信息----------------------
+SESSION_COOKIE_AGE = 43200             # Session的cookie失效日期（12小时）（数字为秒数）（默认）
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True   # 是否关闭浏览器使得Session过期（默认）
+SESSION_SAVE_EVERY_REQUEST =  True      # 是否每次请求都保存Session，默认修改之后才保存（默认）
+
 # ------------------------------权限配置相关信息--------------------------
 PERMISSION_SESSION_KEY='qicheng_permission'            #session的权限key值
 MENU_SESSION_KEY='qicheng_menu'                        #session的菜单key值
 VALID_URL_LIST=[                                       #权限白名单
     '/app01/login/$',
-    '/admin/.*'
+    '/admin/.*',
+    '/app01/logout/$',
 ]
 
 

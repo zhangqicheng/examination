@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/font-awesome-4.7.0/css/font-awesome.css">
+    <title>成绩查询</title>
+</head>
+<body>
+    <div class="main" style="width: 800px;margin: 0 auto;text-align: center">
+        <h3>成绩查看</h3>
+        <table class="table table-hover table-striped">
+            <thead>
+                <tr>
+                    <td>序号</td>
+                    <td>姓名</td>
+                    <td>课程</td>
+                    <td>成绩</td>
+            </thead>
+            <tbody>
+                {% for score in score_list %}
+                <tr>
+                    <td>{{ forloop.counter }}</td>
+                    <td>{{score.sid.username}}</td>
+                    <td>{{score.subject.subject}}</td>
+                    <td>{{score.grade}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

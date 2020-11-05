@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,h4{
+    margin: 0;
+    padding: 0;
+}
+ul,li{
+    list-style: none;
+}
+.header{
+    height: 42px;
+    line-height: 42px;
+}
+.kscount{
+    font-size: 14px;
+    margin-left: 10px;
+    color: #fff;
+}
+.newBtn{
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+}
+.iconfont{
+    vertical-align: middle;
+}
+.preview{
+    height: 42px;
+    font-size: 14px;
+    line-height: 42px;
+    font-weight: 600;
+    color: #0095FF;
+    background: #fff;
+    padding: 0 16px;
+}
+.overedit{
+    height: 42px;
+    font-size: 14px;
+    line-height: 42px;
+    font-weight: 600;
+    background: #0095FF;
+    color: #fff;
+    padding: 0 16px;
+}
+.shadow{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 730px;
+    background-color: #1F1F1F;
+    opacity: 0.5;
+    z-index: 99;
+}
+.paper-create{
+    width: 1200px;
+    text-align: left;
+    margin: 0 auto;
+    position: relative;
+    top: 42px;
+    left: 0;
+}
+.paper-box{
+    width: 900px;
+    border-radius: 5px;
+    border: 1px solid rgba(217,217,217,1);
+    padding-bottom: 5px;
+    background: #ffffff;
+    box-shadow: 0px 2px 5px 0px #D9D9D9;
+    position: relative;
+    overflow: auto;
+    margin-left: 300px;
+    margin-top: 10px;
+}
+.paper-edit{
+    width: 100%;
+    margin: 0;
+    height: 700px;
+    overflow: scroll;
+}
+.paper-head{
+    width: 100%;
+    border-bottom: 1px solid #E0E0E0;
+    margin-top: 18px;
+    padding: 10px 0;
+    background-color: #fff;
+    cursor: pointer;
+}
+.paper-head h3{
+    color: #000000;
+    font-size: 24px;
+    padding: 15px 0;
+    line-height: 30px;
+    text-align: center;
+    font-weight: 600;
+}
+.paper-desc{
+    font-size: 16px;
+    line-height: 24px;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+.paper-question{
+    border-bottom: 1px solid #E0E0E0;
+    padding: 20px 0 0;
+}
+.paper-preview{
+    width: 90%;
+    margin: 0 auto;
+}
+.question-title{
+    font-size: 15px;
+}
+.question-radio ul li{
+    width: 98%;
+    margin: 0 auto;
+    height: 30px;
+    line-height: 30px;
+    font-size: 15px;
+}
+.question_active{
+    color: orange;
+}
+.radio-edit{
+    font-size: 14px;
+    margin: 26px 0 0 0;
+    border-top: 1px solid #dfe4e6;
+    padding: 0 0 20px;
+    background: #FAFAFA;
+    position: relative;
+}
+.radio-container{
+    padding: 10px 0;
+}
+.icon{
+    position: absolute;
+    top: -12px;
+    left: 94px;
+    width: 24px;
+    height: 12px;
+    background-image: url(/static/app01/images/icoall.png);
+    background-position: 0px -60px;
+}
+.radio-container select{
+    height: 26px;
+    padding: 0 6px;
+    border: solid 1px #a9a9a9;
+    vertical-align: middle ;
+    border-radius: 5px;
+}
+.table tr td{
+    vertical-align: middle !important;
+    text-align: center;
+}
+.paper-table{
+    position: fixed;
+    top: 52px;
+    left: 0;
+    width: 230px;
+}
+.table-style{
+    width: 230px;
+    background: #fff;
+    padding-left: 15px;
+}
+.open{
+    padding: 3px 0;
+}
+.open-title{
+    width: 100%;
+    color: #000;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.open-title .iconfont{
+    margin: 0 4px;
+}
+.navlist li{
+    float: left;
+    width: 50%;
+}
+.navlist li a{
+    display: block;
+    height: 26px;
+    line-height: 26px;
+    font-size: 13px;
+    color: #666;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 13px;
+}
+.navlist li a:hover{
+    background: #0095FF;
+    color: #fff;
+    text-decoration: none;
+}
+.navlist li a i{
+    font-size: 14px;
+    color: #0095FF;
+    margin: 0 4px 0 6px;
+}
+.navlist:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.modal_paper{
+    display: none;
+    position: fixed;
+    width: 500px;
+    height: 300px;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.1);
+    z-index: 200;
+    left: 0;
+    top: 50%;
+    margin-top: -250px;
+    margin-left: -250px;
+    -webkit-animation: all 2.5s linear;
+}
+.modal_wrap{
+    width: 80%;
+    margin: 35px auto 0;
+    text-align: center;
+}
+.main{
+    margin-top: 80px;
+}
