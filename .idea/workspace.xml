@@ -2,86 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f7fba428-4cf4-42de-8428-d8b4e685eaeb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app01/migrations/0002_auto_20201026_1058.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app01/migrations/0003_auto_20201026_1130.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app01/migrations/0004_remove_userprofile_roles.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app01/migrations/0005_userprofile_roles.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app01/migrations/0006_auto_20201026_1202.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app01/migrations/0007_remove_userprofile_roles.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app01/migrations/0008_userprofile_roles.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app01/static/app01/css/base.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app01/static/app01/css/writepaper.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app01/templates/app01/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app01/templates/app01/score.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app01/templates/app01/test.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app01/templates/app01/test_process.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app01/templates/app01/writepaper.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/teacher/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/teacher/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/teacher/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/teacher/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/teacher/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/teacher/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/teacher/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/teacher/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/脚本/a.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/脚本/chromedriver.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/脚本/file/样本.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/脚本/读取excel表格.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/脚本/资产表单填写自动化/chromedriver.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/脚本/资产表单填写自动化/file/样本.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/脚本/资产表单填写自动化/自动化脚本.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/脚本/资产表单填写自动化/表单填写自动化.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/examination.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/examination.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app01/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/app01/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app01/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/app01/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app01/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/app01/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app01/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app01/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app01/static/app01/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/app01/static/app01/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app01/static/app01/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/app01/static/app01/css/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app01/templates/app01/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app01/templates/app01/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app01/templates/app01/info.html" beforeDir="false" afterPath="$PROJECT_DIR$/app01/templates/app01/info.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app01/templates/app01/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/app01/templates/app01/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app01/static/app01/css/writepaper.css" beforeDir="false" afterPath="$PROJECT_DIR$/app01/static/app01/css/writepaper.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app01/templates/app01/writepaper.html" beforeDir="false" afterPath="$PROJECT_DIR$/app01/templates/app01/writepaper.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app01/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/app01/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app01/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app01/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app01/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app01/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examination/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/examination/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/conf/fastcgi.conf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/conf/fastcgi_params" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/conf/koi-utf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/conf/koi-win" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/conf/mime.types" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/conf/nginx.conf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/conf/scgi_params" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/conf/uwsgi_params" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/conf/win-utf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/contrib/README" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/contrib/geo2nginx.pl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/contrib/unicode2nginx/koi-utf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/contrib/unicode2nginx/unicode-to-nginx.pl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/contrib/unicode2nginx/win-utf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/contrib/vim/ftdetect/nginx.vim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/contrib/vim/ftplugin/nginx.vim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/contrib/vim/indent/nginx.vim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/contrib/vim/syntax/nginx.vim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/docs/CHANGES" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/docs/CHANGES.ru" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/docs/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/docs/OpenSSL.LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/docs/PCRE.LICENCE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/docs/README" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/docs/zlib.LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/html/50x.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/html/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/logs/access.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/logs/error.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/logs/nginx.pid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.19.3/nginx-1.19.3/nginx.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rbac/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/rbac/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rbac/migrations/0002_auto_20201012_2216.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rbac/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/rbac/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,9 +21,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -126,6 +50,12 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.vagrant" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\ZQC\github远程项目\examination\app01\static\app01\images" />
+      <recent name="D:\ZQC\github远程项目\examination\脚本\资产表单填写自动化" />
+      <recent name="D:\ZQC\examination\app01\static\app01\images" />
+      <recent name="D:\ZQC\examination\app01\static\app01" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\ZQC\github远程项目\examination\脚本" />
       <recent name="D:\ZQC\examination\app01\static\app01\images" />
@@ -133,14 +63,8 @@
       <recent name="D:\ZQC\examination\app01\static\app01" />
       <recent name="D:\ZQC\examination\app01\static\app01\css" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\ZQC\github远程项目\examination\app01\static\app01\images" />
-      <recent name="D:\ZQC\github远程项目\examination\脚本\资产表单填写自动化" />
-      <recent name="D:\ZQC\examination\app01\static\app01\images" />
-      <recent name="D:\ZQC\examination\app01\static\app01" />
-    </key>
   </component>
-  <component name="RunManager" selected="Python.tests">
+  <component name="RunManager" selected="Django server.examination">
     <configuration name="自动化脚本 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="examination" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -199,6 +123,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="D:\ZQC\github远程项目\examination\脚本\资产表单填写自动化\表单填写自动化.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="手机电脑连接" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="examination" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/脚本" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/脚本/手机电脑连接.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -353,6 +299,8 @@
       <workItem from="1604364135829" duration="14927000" />
       <workItem from="1604456669628" duration="15093000" />
       <workItem from="1604539134440" duration="17562000" />
+      <workItem from="1604881589159" duration="10630000" />
+      <workItem from="1604970084737" duration="18406000" />
     </task>
     <servers />
   </component>
@@ -368,22 +316,22 @@
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="499" y="184" key="FileChooserDialogImpl/0.0.1440.860@0.0.1440.860" timestamp="1603675098849" />
-    <state width="1397" height="222" key="GridCell.Tab.0.bottom" timestamp="1604482409404">
+    <state width="1380" height="219" key="GridCell.Tab.0.bottom" timestamp="1604885008790">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="1397" height="222" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1604482409404" />
-    <state width="1397" height="222" key="GridCell.Tab.0.center" timestamp="1604482409404">
+    <state width="1380" height="219" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1604885008790" />
+    <state width="1380" height="219" key="GridCell.Tab.0.center" timestamp="1604885008790">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="1397" height="222" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1604482409404" />
-    <state width="1397" height="222" key="GridCell.Tab.0.left" timestamp="1604482409404">
+    <state width="1380" height="219" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1604885008790" />
+    <state width="1380" height="219" key="GridCell.Tab.0.left" timestamp="1604885008790">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="1397" height="222" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1604482409404" />
-    <state width="1397" height="222" key="GridCell.Tab.0.right" timestamp="1604482409404">
+    <state width="1380" height="219" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1604885008790" />
+    <state width="1380" height="219" key="GridCell.Tab.0.right" timestamp="1604885008790">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="1397" height="222" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1604482409404" />
+    <state width="1380" height="219" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1604885008790" />
     <state width="1379" height="264" key="GridCell.Tab.1.bottom" timestamp="1602729384158">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
@@ -404,18 +352,18 @@
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="220" y="61" key="SettingsEditor/0.0.1440.860@0.0.1440.860" timestamp="1603675297982" />
-    <state x="400" y="254" key="com.intellij.ide.util.TipDialog" timestamp="1604539135004">
+    <state x="400" y="254" key="com.intellij.ide.util.TipDialog" timestamp="1604970084754">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="400" y="254" key="com.intellij.ide.util.TipDialog/0.0.1440.860@0.0.1440.860" timestamp="1604539135004" />
+    <state x="400" y="254" key="com.intellij.ide.util.TipDialog/0.0.1440.860@0.0.1440.860" timestamp="1604970084754" />
     <state x="271" y="165" width="895" height="530" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1602729381630">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="271" y="165" width="895" height="530" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1440.860@0.0.1440.860" timestamp="1602729381630" />
-    <state x="383" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1604557842464">
+    <state x="383" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1604911850827">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="383" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1440.860@0.0.1440.860" timestamp="1604557842464" />
+    <state x="383" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1440.860@0.0.1440.860" timestamp="1604911850827" />
     <state x="441" y="330" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1602299354527">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
@@ -424,8 +372,8 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/examination$excel.coverage" NAME="读取excel表格 Coverage Results" MODIFIED="1602742163849" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/脚本" />
     <SUITE FILE_PATH="coverage/examination$tests.coverage" NAME="tests Coverage Results" MODIFIED="1604479451032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app01" />
-    <SUITE FILE_PATH="coverage/examination$.coverage" NAME="表单填写自动化 Coverage Results" MODIFIED="1603328601664" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/脚本" />
     <SUITE FILE_PATH="coverage/examination$__1_.coverage" NAME="表单填写自动化 (1) Coverage Results" MODIFIED="1603356571510" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/脚本/资产表单填写自动化" />
+    <SUITE FILE_PATH="coverage/examination$.coverage" NAME="手机电脑连接 Coverage Results" MODIFIED="1604883841951" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/脚本" />
     <SUITE FILE_PATH="coverage/examination$a.coverage" NAME="a Coverage Results" MODIFIED="1602743289085" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/脚本" />
   </component>
 </project>

@@ -146,254 +146,107 @@
                 </div>
                 <div class="paper-question">
                 {#          js生成页面              #}
-                <script>
-                    $("#uniterm").click(function () {
-                        $('.paper-question').append("\t\t\t\t\t<div class=\"paper-preview\">\n" +
-                            "                        <div class=\"question-title\">\n" +
-                            "                            <strong>1.</strong>&nbsp;&nbsp;\n" +
-                            "                            <strong id=\"radio_title-1\">哪个sql语句是正确的?</strong>\n" +
-                            "                            <span style=\"color: rgb(239, 160, 48);\">(分值:5分)</span>\n" +
-                            "                        </div>\n" +
-                            "                        <div class=\"question-radio\" id=\"question-radio\">\n" +
-                            "                            <ul>\n" +
-                            "                                <li class=\"question_active\">\n" +
-                            "                                    <input type=\"radio\" id=\"hh\">\n" +
-                            "                                    <span>选项1</span>&nbsp;&nbsp;\n" +
-                            "                                    <label for=\"\">(正确答案)</label>\n" +
-                            "                                </li>\n" +
-                            "                                <li class=\"\">\n" +
-                            "                                    <input type=\"radio\">\n" +
-                            "                                    <span>选项2</span>&nbsp;&nbsp;\n" +
-                            "                                    <label for=\"\"></label>\n" +
-                            "                                </li>\n" +
-                            "                                <li class=\"\">\n" +
-                            "                                    <input type=\"radio\">\n" +
-                            "                                    <span>选项3</span>&nbsp;&nbsp;\n" +
-                            "                                    <label for=\"\"></label>\n" +
-                            "                                </li>\n" +
-                            "                                <li class=\"\">\n" +
-                            "                                    <input type=\"radio\">\n" +
-                            "                                    <span>选项4</span>&nbsp;&nbsp;\n" +
-                            "                                    <label for=\"\"></label>\n" +
-                            "                                </li>\n" +
-                            "                            </ul>\n" +
-                            "                        </div>\n" +
-                            "                        <div class=\"radio-edit\" id=\"radio-edit\">\n" +
-                            "                            <div class=\"icon\"></div>\n" +
-                            "                            <div class=\"radio-container\">\n" +
-                            "                                <textarea name=\"\" id=\"radio-1\"  rows=\"3\" class=\"form-control\" placeholder=\"请输入标题\"></textarea>\n" +
-                            "                            </div>\n" +
-                            "                            <div class=\"radio-container\">\n" +
-                            "                                <span><b>题目分数:</b></span>&nbsp;&nbsp;\n" +
-                            "                                <select name=\"\" id=\"\" style=\"overflow: scroll\">\n" +
-                            "                                    <option value=\"\">1</option>\n" +
-                            "                                    <option value=\"\">2</option>\n" +
-                            "                                    <option value=\"\">2.5</option>\n" +
-                            "                                    <option value=\"\">3</option>\n" +
-                            "                                    <option value=\"\">3.5</option>\n" +
-                            "                                    <option value=\"\">4</option>\n" +
-                            "                                    <option value=\"\">4.5</option>\n" +
-                            "                                    <option value=\"\">5</option>\n" +
-                            "                                    <option value=\"\">5.5</option>\n" +
-                            "                                    <option value=\"\">6</option>\n" +
-                            "                                    <option value=\"\">10</option>\n" +
-                            "                                    <option value=\"\">10.5</option>\n" +
-                            "                                    <option value=\"\">11</option>\n" +
-                            "                                    <option value=\"\">11.5</option>\n" +
-                            "                                </select>\n" +
-                            "                            </div>\n" +
-                            "                            <div class=\"radio-container\">\n" +
-                            "                                <table class=\"table table-hover table-striped\">\n" +
-                            "                                    <thead>\n" +
-                            "                                        <tr>\n" +
-                            "                                            <td style=\"text-align: left\">选项文字</td>\n" +
-                            "                                            <td>图片</td>\n" +
-                            "                                            <td>说明</td>\n" +
-                            "                                            <td>正确答案</td>\n" +
-                            "                                            <td>其他操作</td>\n" +
-                            "                                        </tr>\n" +
-                            "                                    </thead>\n" +
-                            "                                    <tbody>\n" +
-                            "                                        <tr>\n" +
-                            "                                            <td style=\"text-align: left\">\n" +
-                            "                                                <strong>A选项:</strong>\n" +
-                            "                                                <input type=\"text\" class=\"form-control\" style=\"display: inline-block;width: 70%\">\n" +
-                            "                                                &nbsp;<span>插入</span><span>删除</span>\n" +
-                            "                                            </td>\n" +
-                            "                                            <td><span>图片</span></td>\n" +
-                            "                                            <td><span>说明</span></td>\n" +
-                            "                                            <td><input type=\"checkbox\"></td>\n" +
-                            "                                            <td><span>xxx</span></td>\n" +
-                            "                                        </tr>\n" +
-                            "                                        <tr>\n" +
-                            "                                            <td style=\"text-align: left\">\n" +
-                            "                                                <strong>B选项:</strong>\n" +
-                            "                                                <input type=\"text\" class=\"form-control\" style=\"display: inline-block;width: 70%\">\n" +
-                            "                                                &nbsp;<span>插入</span><span>删除</span>\n" +
-                            "                                            </td>\n" +
-                            "                                            <td><span>图片</span></td>\n" +
-                            "                                            <td><span>说明</span></td>\n" +
-                            "                                            <td><input type=\"checkbox\"></td>\n" +
-                            "                                            <td><span>xxx</span></td>\n" +
-                            "                                        </tr>\n" +
-                            "                                    </tbody>\n" +
-                            "                                </table>\n" +
-                            "                            </div>\n" +
-                            "                            <div class=\"radio-container\">\n" +
-                            "                                <button class=\"btn btn-success\" value=\"完成编辑\" style=\"width: 100%;height: 40px;font-size: 16px;\">完成编辑</button>\n" +
-                            "                            </div>\n" +
-                            "                        </div>\n" +
-                            "                       \n" +
-                            "                    </div>")
-                    });
-                    $("#mulsec").click(function () {
-                        $(".paper-question").append("\t\t\t\t\t<div class=\"paper-preview\">\n" +
-                            "                        <div class=\"question-title\">\n" +
-                            "                            <strong>1.</strong>&nbsp;&nbsp;\n" +
-                            "                            <strong>哪个sql语句是正确的?</strong>\n" +
-                            "                            <span style=\"color: rgb(239, 160, 48);\">(分值:5分)</span>\n" +
-                            "                        </div>\n" +
-                            "                      \n" +
-                            "                        <div class=\"question-radio\" id=\"question-mul\">\n" +
-                            "                            <ul>\n" +
-                            "                                <li class=\"question_active\">\n" +
-                            "                                    <input type=\"checkbox\">\n" +
-                            "                                    <span>选项1</span>&nbsp;&nbsp;\n" +
-                            "                                    <label for=\"\">(正确答案)</label>\n" +
-                            "                                </li>\n" +
-                            "                                <li class=\"question_active\">\n" +
-                            "                                    <input type=\"checkbox\">\n" +
-                            "                                    <span>选项2</span>&nbsp;&nbsp;\n" +
-                            "                                    <label for=\"\">(正确答案)</label>\n" +
-                            "                                </li>\n" +
-                            "                                <li class=\"\">\n" +
-                            "                                    <input type=\"checkbox\">\n" +
-                            "                                    <span>选项3</span>&nbsp;&nbsp;\n" +
-                            "                                    <label for=\"\"></label>\n" +
-                            "                                </li>\n" +
-                            "                                <li class=\"\">\n" +
-                            "                                    <input type=\"checkbox\">\n" +
-                            "                                    <span>选项4</span>&nbsp;&nbsp;\n" +
-                            "                                    <label for=\"\"></label>\n" +
-                            "                                </li>\n" +
-                            "                            </ul>\n" +
-                            "                        </div>\n" +
-                            "                  \n" +
-                            "                        <div class=\"radio-edit\" id=\"mul-edit\">\n" +
-                            "                            <div class=\"icon\"></div>\n" +
-                            "                            <div class=\"radio-container\">\n" +
-                            "                                <textarea name=\"\" id=\"\" rows=\"3\" class=\"form-control\" placeholder=\"请输入标题\"></textarea>\n" +
-                            "                            </div>\n" +
-                            "                            <div class=\"radio-container\">\n" +
-                            "                                <span><b>题目分数:</b></span>&nbsp;&nbsp;\n" +
-                            "                                <select name=\"\" id=\"\" style=\"overflow: scroll\">\n" +
-                            "                                    <option value=\"\">1</option>\n" +
-                            "                                    <option value=\"\">2</option>\n" +
-                            "                                    <option value=\"\">2.5</option>\n" +
-                            "                                    <option value=\"\">3</option>\n" +
-                            "                                    <option value=\"\">3.5</option>\n" +
-                            "                                    <option value=\"\">4</option>\n" +
-                            "                                    <option value=\"\">4.5</option>\n" +
-                            "                                    <option value=\"\">5</option>\n" +
-                            "                                    <option value=\"\">5.5</option>\n" +
-                            "                                    <option value=\"\">6</option>\n" +
-                            "                                    <option value=\"\">10</option>\n" +
-                            "                                    <option value=\"\">10.5</option>\n" +
-                            "                                    <option value=\"\">11</option>\n" +
-                            "                                    <option value=\"\">11.5</option>\n" +
-                            "                                </select>\n" +
-                            "                            </div>\n" +
-                            "                            <div class=\"radio-container\">\n" +
-                            "                                <table class=\"table table-hover table-striped\">\n" +
-                            "                                    <thead>\n" +
-                            "                                        <tr>\n" +
-                            "                                            <td style=\"text-align: left\">选项文字</td>\n" +
-                            "                                            <td>图片</td>\n" +
-                            "                                            <td>说明</td>\n" +
-                            "                                            <td>正确答案</td>\n" +
-                            "                                            <td>其他操作</td>\n" +
-                            "                                        </tr>\n" +
-                            "                                    </thead>\n" +
-                            "                                    <tbody>\n" +
-                            "                                        <tr>\n" +
-                            "                                            <td style=\"text-align: left\">\n" +
-                            "                                                <strong>选项1:</strong>\n" +
-                            "                                                <input type=\"text\" class=\"form-control\" style=\"display: inline-block;width: 70%\">\n" +
-                            "                                                &nbsp;<span>插入</span><span>删除</span>\n" +
-                            "                                            </td>\n" +
-                            "                                            <td><span>图片</span></td>\n" +
-                            "                                            <td><span>说明</span></td>\n" +
-                            "                                            <td><input type=\"checkbox\"></td>\n" +
-                            "                                            <td><span>xxx</span></td>\n" +
-                            "                                        </tr>\n" +
-                            "                                        <tr>\n" +
-                            "                                            <td style=\"text-align: left\">\n" +
-                            "                                                <strong>选项2:</strong>\n" +
-                            "                                                <input type=\"text\" class=\"form-control\" style=\"display: inline-block;width: 70%\">\n" +
-                            "                                                &nbsp;<span>插入</span><span>删除</span>\n" +
-                            "                                            </td>\n" +
-                            "                                            <td><span>图片</span></td>\n" +
-                            "                                            <td><span>说明</span></td>\n" +
-                            "                                            <td><input type=\"checkbox\"></td>\n" +
-                            "                                            <td><span>xxx</span></td>\n" +
-                            "                                        </tr>\n" +
-                            "                                    </tbody>\n" +
-                            "                                </table>\n" +
-                            "                            </div>\n" +
-                            "                            <div class=\"radio-container\">\n" +
-                            "                                <button class=\"btn btn-success\" value=\"完成编辑\" style=\"width: 100%;height: 40px;font-size: 16px;\">完成编辑</button>\n" +
-                            "                            </div>\n" +
-                            "                        </div>\n" +
-                            "                    </div>")
-                    });
-                    $("#subject").click(function () {
-                        $(".paper-question").append("<div class=\"paper-preview\">\n" +
-                            "                        <div class=\"question-title\">\n" +
-                            "                            <strong>1.</strong>&nbsp;&nbsp;\n" +
-                            "                            <strong>哪个sql语句是正确的?</strong>\n" +
-                            "                            <span style=\"color: rgb(239, 160, 48);\">(分值:5分)</span>\n" +
-                            "                        </div>\n" +
-                            "                       \n" +
-                            "                        <div class=\"question-radio\" id=\"question-sub\">\n" +
-                            "                            <ul>\n" +
-                            "                                <textarea name=\"\" id=\"\" rows=\"5\" class=\"form-control\"></textarea>\n" +
-                            "                            </ul>\n" +
-                            "                        </div>\n" +
-                            "                        <div class=\"radio-edit\" id=\"sub-edit\">\n" +
-                            "                            <div class=\"icon\"></div>\n" +
-                            "                            <div class=\"radio-container\">\n" +
-                            "                                <textarea name=\"\" id=\"\" rows=\"3\" class=\"form-control\" placeholder=\"请输入标题\"></textarea>\n" +
-                            "                            </div>\n" +
-                            "                            <div class=\"radio-container\">\n" +
-                            "                                <span><b>题目分数:</b></span>&nbsp;&nbsp;\n" +
-                            "                                <select name=\"\" id=\"\" style=\"overflow: scroll\">\n" +
-                            "                                    <option value=\"\">1</option>\n" +
-                            "                                    <option value=\"\">2</option>\n" +
-                            "                                    <option value=\"\">2.5</option>\n" +
-                            "                                    <option value=\"\">3</option>\n" +
-                            "                                    <option value=\"\">3.5</option>\n" +
-                            "                                    <option value=\"\">4</option>\n" +
-                            "                                    <option value=\"\">4.5</option>\n" +
-                            "                                    <option value=\"\">5</option>\n" +
-                            "                                    <option value=\"\">5.5</option>\n" +
-                            "                                    <option value=\"\">6</option>\n" +
-                            "                                    <option value=\"\">10</option>\n" +
-                            "                                    <option value=\"\">10.5</option>\n" +
-                            "                                    <option value=\"\">11</option>\n" +
-                            "                                    <option value=\"\">11.5</option>\n" +
-                            "                                </select>\n" +
-                            "                            </div>\n" +
-                            "                            <div class=\"radio-container\">\n" +
-                            "                                <button class=\"btn btn-success\" value=\"完成编辑\" style=\"width: 100%;height: 40px;font-size: 16px;\" id=\"btn\">完成编辑</button>\n" +
-                            "                            </div>\n" +
-                            "                        </div>\n" +
-                            "                    </div>")
-                    })
-                </script>
+                    <script>
+                        function generate_radio() {
+                            $(".paper-question").append("<div class=\"paper-preview\">\n" +
+                                "                        <div class=\"question-title\">\n" +
+                                "                            <strong>哪个sql语句是正确的?</strong>\n" +
+                                "                            <span style=\"color: rgb(239, 160, 48);\">(分值:5分)</span>\n" +
+                                "                        </div>\n" +
+                                "                        <div class=\"question-radio\" id=\"question-radio\">\n" +
+                                "                            <ul>\n" +
+                                "                                <li class=\"question_active\">\n" +
+                                "                                    <input type=\"radio\">\n" +
+                                "                                    <span>选项1</span>&nbsp;&nbsp;\n" +
+                                "                                    <label for=\"\">(正确答案)</label>\n" +
+                                "                                </li>\n" +
+                                "                                <li class=\"\">\n" +
+                                "                                    <input type=\"radio\">\n" +
+                                "                                    <span>选项2</span>&nbsp;&nbsp;\n" +
+                                "                                    <label for=\"\"></label>\n" +
+                                "                                </li>\n" +
+                                "                                <li class=\"\">\n" +
+                                "                                    <input type=\"radio\">\n" +
+                                "                                    <span>选项3</span>&nbsp;&nbsp;\n" +
+                                "                                    <label for=\"\"></label>\n" +
+                                "                                </li>\n" +
+                                "                                <li class=\"\">\n" +
+                                "                                    <input type=\"radio\">\n" +
+                                "                                    <span>选项4</span>&nbsp;&nbsp;\n" +
+                                "                                    <label for=\"\"></label>\n" +
+                                "                                </li>\n" +
+                                "                            </ul>\n" +
+                                "                        </div><div class=\"radio-edit hide\" id=\"radio-edit\">\n" +
+                                "                            <div class=\"icon\"></div>\n" +
+                                "                            <div class=\"radio-container\">\n" +
+                                "                                <textarea name=\"\" id=\"\"  rows=\"3\" class=\"form-control\" placeholder=\"请输入标题\"></textarea>\n" +
+                                "                            </div>\n" +
+                                "                            <div class=\"radio-container\">\n" +
+                                "                                <span><b>题目分数:</b></span>&nbsp;&nbsp;\n" +
+                                "                                <select name=\"\" id=\"\" style=\"overflow: scroll\">\n" +
+                                "                                    <option value=\"\">1</option>\n" +
+                                "                                    <option value=\"\">2</option>\n" +
+                                "                                    <option value=\"\">2.5</option>\n" +
+                                "                                    <option value=\"\">3</option>\n" +
+                                "                                    <option value=\"\">3.5</option>\n" +
+                                "                                    <option value=\"\">4</option>\n" +
+                                "                                    <option value=\"\">4.5</option>\n" +
+                                "                                    <option value=\"\">5</option>\n" +
+                                "                                    <option value=\"\">5.5</option>\n" +
+                                "                                    <option value=\"\">6</option>\n" +
+                                "                                    <option value=\"\">10</option>\n" +
+                                "                                    <option value=\"\">10.5</option>\n" +
+                                "                                    <option value=\"\">11</option>\n" +
+                                "                                    <option value=\"\">11.5</option>\n" +
+                                "                                </select>\n" +
+                                "                            </div>\n" +
+                                "                            <div class=\"radio-container\">\n" +
+                                "                                <table class=\"table table-hover table-striped\">\n" +
+                                "                                    <thead>\n" +
+                                "                                        <tr>\n" +
+                                "                                            <td style=\"text-align: left\">选项文字</td>\n" +
+                                "                                            <td>图片</td>\n" +
+                                "                                            <td>说明</td>\n" +
+                                "                                            <td>正确答案</td>\n" +
+                                "                                            <td>其他操作</td>\n" +
+                                "                                        </tr>\n" +
+                                "                                    </thead>\n" +
+                                "                                    <tbody>\n" +
+                                "                                        <tr>\n" +
+                                "                                            <td style=\"text-align: left\">\n" +
+                                "                                                <strong>A选项:</strong>\n" +
+                                "                                                <input type=\"text\" class=\"form-control\" style=\"display: inline-block;width: 70%\">\n" +
+                                "                                                &nbsp;<span>插入</span>|<span>删除</span>\n" +
+                                "                                            </td>\n" +
+                                "                                            <td><span>图片</span></td>\n" +
+                                "                                            <td><span>说明</span></td>\n" +
+                                "                                            <td><input type=\"checkbox\"></td>\n" +
+                                "                                            <td><span>xxx</span></td>\n" +
+                                "                                        </tr>\n" +
+                                "                                        <tr>\n" +
+                                "                                            <td style=\"text-align: left\">\n" +
+                                "                                                <strong>B选项:</strong>\n" +
+                                "                                                <input type=\"text\" class=\"form-control\" style=\"display: inline-block;width: 70%\">\n" +
+                                "                                                &nbsp;<span>插入</span>|<span>删除</span>\n" +
+                                "                                            </td>\n" +
+                                "                                            <td><span>图片</span></td>\n" +
+                                "                                            <td><span>说明</span></td>\n" +
+                                "                                            <td><input type=\"checkbox\"></td>\n" +
+                                "                                            <td><span>xxx</span></td>\n" +
+                                "                                        </tr>\n" +
+                                "                                    </tbody>\n" +
+                                "                                </table>\n" +
+                                "                            </div>\n" +
+                                "                            <div class=\"radio-container\">\n" +
+                                "                                <button class=\"btn btn-success\" value=\"完成编辑\" style=\"width: 100%;height: 40px;font-size: 16px;\">完成编辑</button>\n" +
+                                "                            </div>\n" +
+                                "                        </div>")
+                        }
+                    </script>
                     <div class="paper-preview hide">
                         <div class="question-title">
                             <strong>1.</strong>&nbsp;&nbsp;
-                            <strong>哪个sql语句是正确的?</strong>
+                            <strong>哪个sql语句是正确的.....?</strong>
                             <span style="color: rgb(239, 160, 48);">(分值:5分)</span>
                         </div>
                         <div class="question-radio hide" id="question-radio">
@@ -641,15 +494,53 @@
                 $(".modal_paper").addClass('hide');
                 $(".shadow").addClass('hide');
             });
-            //单项选择对应操作
-            $(".paper-question").on("click",function () {
-                $("#radio-1").bind('input propertychange', function() {
-                    var a = $("#radio-1").val();
-                    console.log(a)
-                    $("#radio_title-1").text(a);
+
+            //js生成html文本
+            $("#uniterm").click(function () {
+                generate_radio()        //生成编辑隐藏的单项选择
+            });
+
+            //等待js加载完成，并添加编辑显示事件
+            $(".paper-question").hover(function () {
+                $(".question-title,.question-radio").click(function () {
+                    $(this).parent().parent().find(".radio-edit").addClass("hide"); //将所有编辑设为隐藏
+                    $(this).parent().find(".radio-edit").removeClass("hide").find("textarea").focus();     //点击的出现
+                    //1.属性添加
+                    $(this).parent().children(".question-title").children("strong").attr("id","link-title"); //题目标题
+                    $(this).parent().children(".radio-edit").find("textarea").attr("id","edit-title");       //编辑标题框
+                    $(this).parent().children(".radio-edit").bind('click input', function () {
+                        console.log("监听到点击事件")
+                        //一.标题联动
+                        var a=$(this).parent().children(".radio-edit").find("textarea").val();
+                        $(this).parent().children(".question-title").children("strong").text(a);
+
+                        //二.分数联动
+                        $(this).find("select option:selected").click(function () {
+                            var b=$(this).text();
+                            var b="(分值:"+b+"分)";
+                            $(this).parent().parent().parent().parent().children(".question-title").children("span").text(b);
+                        });
+
+                        //三.选项联动
+                    });
+
+                    //3.去除联动,先放着，不会
                 })
             })
 
+            //单项选择对应操作
+            //$(".paper-question").on("click",function () {
+
+             //   $("#radio-1").bind('input propertychange', function() {
+              //      var a = $("#radio-1").val();
+              //      console.log(a);
+               //     $("#radio_title-1").text(a);
+             //   });
+
+              //  $(".paper-preview").click(function () {
+               //     $(this).find(".radio-edit").removeClass("hide")
+             //   })
+          //  })
         })
 
     </script>

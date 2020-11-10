@@ -108,6 +108,7 @@ ul,li{
 .paper-question{
     border-bottom: 1px solid #E0E0E0;
     padding: 20px 0 0;
+    cursor: pointer;
 }
 .paper-preview{
     width: 90%;
