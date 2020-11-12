@@ -147,6 +147,29 @@ ul,li{
     background-image: url(/static/app01/images/icoall.png);
     background-position: 0px -60px;
 }
+.design-icon{
+    background-image: url("/static/app01/images/icoall.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-position: -49px -113px;
+    vertical-align: middle;
+}
+.design-add{
+    width: 20px;
+    height: 20px;
+    background-position: -49px -113px;
+}
+.design-minu{
+    width: 20px;
+    height: 20px;
+    background-position: -72px -113px;
+}
+.design-add:hover{
+    background-position: -143px -113px;
+}
+.design-minu:hover{
+    background-position: -165px -113px;
+}
 .radio-container select{
     height: 26px;
     padding: 0 6px;

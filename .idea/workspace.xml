@@ -5,7 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app01/static/app01/css/writepaper.css" beforeDir="false" afterPath="$PROJECT_DIR$/app01/static/app01/css/writepaper.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app01/templates/app01/writepaper.html" beforeDir="false" afterPath="$PROJECT_DIR$/app01/templates/app01/writepaper.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app01/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/app01/tests.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -301,6 +300,11 @@
       <workItem from="1604539134440" duration="17562000" />
       <workItem from="1604881589159" duration="10630000" />
       <workItem from="1604970084737" duration="18406000" />
+      <workItem from="1605055546518" duration="7600000" />
+      <workItem from="1605142057451" duration="3443000" />
+      <workItem from="1605145548693" duration="5705000" />
+      <workItem from="1605151816661" duration="11459000" />
+      <workItem from="1605173938768" duration="1514000" />
     </task>
     <servers />
   </component>
@@ -352,18 +356,18 @@
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="220" y="61" key="SettingsEditor/0.0.1440.860@0.0.1440.860" timestamp="1603675297982" />
-    <state x="400" y="254" key="com.intellij.ide.util.TipDialog" timestamp="1604970084754">
+    <state x="400" y="254" key="com.intellij.ide.util.TipDialog" timestamp="1605173938988">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="400" y="254" key="com.intellij.ide.util.TipDialog/0.0.1440.860@0.0.1440.860" timestamp="1604970084754" />
+    <state x="400" y="254" key="com.intellij.ide.util.TipDialog/0.0.1440.860@0.0.1440.860" timestamp="1605173938988" />
     <state x="271" y="165" width="895" height="530" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1602729381630">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="271" y="165" width="895" height="530" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1440.860@0.0.1440.860" timestamp="1602729381630" />
-    <state x="383" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1604911850827">
+    <state x="383" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1605170290448">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="383" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1440.860@0.0.1440.860" timestamp="1604911850827" />
+    <state x="383" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1440.860@0.0.1440.860" timestamp="1605170290448" />
     <state x="441" y="330" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1602299354527">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
