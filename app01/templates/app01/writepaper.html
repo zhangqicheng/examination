@@ -144,12 +144,12 @@
                     <h3>数据库原理</h3>
                     <div class="paper-desc">添加问卷说明（可选）</div>
                 </div>
-                <div class="paper-question">
+                <div class="paper-question" tabindex="0" style="outline: 0">
                 {#          js生成页面              #}
                     <script>
                         //生成单项选择
                         function generate_base_radio() {
-                            $(".paper-question").append("<div class=\"paper-preview\">\n" +
+                            $(".paper-question").append("<div class=\"paper-preview\" tabindex=\"0\" style=\"outline: 0\">\n" +
                                 "                        <div class=\"question-title\">\n" +
                                 "                            <strong>哪个sql语句是正确的?</strong>\n" +
                                 "                            <span style=\"color: rgb(239, 160, 48);\">(分值:5分)</span>\n" +
@@ -170,7 +170,7 @@
                                 "                        </div><div class=\"radio-edit hide\" id=\"radio-edit\">\n" +
                                 "                            <div class=\"icon\"></div>\n" +
                                 "                            <div class=\"radio-container\">\n" +
-                                "                                <textarea name=\"\" id=\"\"  rows=\"3\" class=\"form-control\" placeholder=\"请输入标题\"></textarea>\n" +
+                                "                                <textarea name=\"\" id=\"\"  rows=\"3\" class=\"form-control\" placeholder=\"请输入标题\">哪个sql语句是正确的?</textarea>\n" +
                                 "                            </div>\n" +
                                 "                            <div class=\"radio-container\">\n" +
                                 "                                <span><b>题目分数:</b></span>&nbsp;&nbsp;\n" +
@@ -182,7 +182,7 @@
                                 "                                    <option value=\"\">3.5</option>\n" +
                                 "                                    <option value=\"\">4</option>\n" +
                                 "                                    <option value=\"\">4.5</option>\n" +
-                                "                                    <option value=\"\">5</option>\n" +
+                                "                                    <option value=\"\" selected>5</option>\n" +
                                 "                                    <option value=\"\">5.5</option>\n" +
                                 "                                    <option value=\"\">6</option>\n" +
                                 "                                    <option value=\"\">10</option>\n" +
@@ -203,10 +203,10 @@
                                 "                                        </tr>\n" +
                                 "                                    </thead>\n" +
                                 "                                    <tbody>\n" +
-                                "                                        <tr>\n" +
-                                "                                            <td style=\"text-align: left\" id=\"radio_1_1\">\n" +
+                                "                                        <tr id=\"edit-1\">\n" +
+                                "                                            <td style=\"text-align: left\">\n" +
                                 "                                                <strong>A选项:</strong>\n" +
-                                "                                                <input type=\"text\" class=\"form-control\" style=\"display: inline-block;width: 70%\">\n" +
+                                "                                                <input type=\"text\" class=\"form-control\" style=\"display: inline-block;width: 70%\" value='选项1'>\n" +
                                 "                                                &nbsp;<span class=\"design-icon design-add\"></span>\n" +
                                 "                                                <span class=\"design-icon design-minu\"></span>" +
                                 "                                            </td>\n" +
@@ -215,10 +215,10 @@
                                 "                                            <td><input type=\"checkbox\"></td>\n" +
                                 "                                            <td><span>xxx</span></td>\n" +
                                 "                                        </tr>\n" +
-                                "                                        <tr>\n" +
-                                "                                            <td style=\"text-align: left\" id=\"radio_1_2\">\n" +
+                                "                                        <tr id=\"edit-2\">\n" +
+                                "                                            <td style=\"text-align: left\">\n" +
                                 "                                                <strong>B选项:</strong>\n" +
-                                "                                                <input type=\"text\" class=\"form-control\" style=\"display: inline-block;width: 70%\">\n" +
+                                "                                                <input type=\"text\" class=\"form-control\" style=\"display: inline-block;width: 70%\" value='选项2'>\n" +
                                 "                                                &nbsp;<span class=\"design-icon design-add\"></span>\n" +
                                 "                                                <span class=\"design-icon design-minu\"></span>\n" +
                                 "                                            </td>\n" +
@@ -237,8 +237,8 @@
                         }
                         //产生单项编辑题
                         function generate_new_edit(url,v1) {
-                            $(url).append("<tr>\n" +
-                                "                                            <td style=\"text-align: left\" id="+v1+">\n" +
+                            $(url).append("<tr id="+v1+">\n" +
+                                "                                            <td style=\"text-align: left\">\n" +
                                 "                                                <strong>A选项:</strong>\n" +
                                 "                                                <input type=\"text\" class=\"form-control\" style=\"display: inline-block;width: 70%\">\n" +
                                 "                                                &nbsp;<span class=\"design-icon design-add\"></span>\n" +
@@ -250,9 +250,8 @@
                                 "                                        </tr>")
                         }
                         //产生新的显示单项
-                        function generate_new_radio(data) {
-                            console.log(data)
-                            $(data).append("<li class=\"\">\n" +
+                        function generate_new_radio(url,v1) {
+                            $(url).append("<li class=\"\" id="+v1+">\n" +
                                 "                                    <input type=\"radio\">\n" +
                                 "                                    <span>选项2</span>&nbsp;&nbsp;\n" +
                                 "                                    <label for=\"\"></label>\n" +
@@ -502,8 +501,13 @@
         </div>
     </div>
 
+
     <script>
+        $("#foot").blur(function (){
+            console.log(123)
+        })
         $(function () {
+
             $(".modal_paper").animate({left:'50%'},500);
             $("#back").click(function () {
                 location.href="{% url 'app01:paper' %}"
@@ -513,71 +517,85 @@
                 $(".shadow").addClass('hide');
             });
 
-            //js生成html文本
+            //生成基础单选
             $("#uniterm").click(function () {
                 generate_base_radio()        //生成编辑隐藏的单项选择
             });
 
-            //等待js加载完成，并添加编辑显示事件
-            $(".paper-question").hover(function () {
-                $(".question-title,.question-radio").click(function () {
-                    $(this).parent().parent().find(".radio-edit").addClass("hide"); //将所有编辑设为隐藏
-                    $(this).parent().find(".radio-edit").removeClass("hide").find("textarea").focus();     //点击的出现
-                    //1.属性添加
-                    $(this).parent().children(".question-title").children("strong").attr("id","link-title"); //题目标题
-                    $(this).parent().children(".radio-edit").find("textarea").attr("id","edit-title");       //编辑标题框
-                    $(this).parent().children(".radio-edit").bind('click input', function () {
-                        console.log("接受click或input事件")
-                        //一.标题联动
-                        var a=$(this).parent().children(".radio-edit").find("textarea").val();
-                        $(this).parent().children(".question-title").children("strong").text(a);
 
-                        //二.分数联动
-                        $(this).find("select option:selected").click(function () {
-                            var b=$(this).text();
-                            var b="(分值:"+b+"分)";
-                            $(this).parent().parent().parent().parent().children(".question-title").children("span").text(b);
-                        });
-
-                        //三.选项联动
-                        //1.添加
-                        $(this).find(".design-add").unbind("click");
-                        $(this).find(".design-add").on("click",function () {
-                            var add=$(this).parent().parent().parent();
-                            generate_new_edit(add);
-                            //给每个tr的第一个td设置class属性
-                            add.children().each(function (index,value) {
-                                console.log(index,value)
-                                var first_child=$(this).children().get(0);
-                                $(first_child).addClass("td-first");
-                            });
-                            //对应的生成显示选项
-                            var ul=add.parent().parent().parent().parent().find(".question-radio ul");
-                            generate_new_radio(ul);
-
-                        });
-                        //2.删除
-                        $(this).find(".design-minu").unbind("click");
-                        $(this).find(".design-minu").on("click",function () {
-                            $(this).parent().parent().remove()
-
-                        });
-                        //3.相互关联
-                        //4.测试
-                        function connect(self) {
-                            //产生基本单项选择题
-                            generate_base_radio()
-                            //产生新的单项编辑
-                            generate_new_edit(self,"radio_1_4")
-                        }
-                        connect(this)
-                    });
-
-                    //3.去除联动,先放着，不会
+            function LoadEvent(){
+                //删除，添加click事件
+                var temp=".question-title,.question-radio"
+                $(temp).unbind("click")
+                $(temp).on("click",function (){
+                    $(temp).siblings(".radio-edit").addClass("hide")
+                    $(this).siblings(".radio-edit").removeClass("hide").find("textarea").focus()
+                    $(".paper-preview").unbind("blur").blur(function (){
+                        console.log("脱离div")
+                    })
+                    console.log(123)
                 })
+            }
+            function ListenEvent(self){
+                $(self).children(".paper-preview").children(".radio-edit").unbind("click input").bind("click input",function (){
+                    //当前radio-edit位置
+                    var radio_edit=this;
+                    //标题联动
+                    var textarea=$(this).find("textarea").val()
+                    $(this).siblings(".question-title").children("strong").text(textarea)
+                    //分数联动
+                    $(this).find("select option:selected").click(function (){
+                        var score=$(this).text()
+                        var score="(分值:"+score+"分)";
+                        $(radio_edit).siblings(".question-title").children("span").text(score)
+                    })
+                    //选项添加联动
+                    $(radio_edit).find(".design-add").unbind("click").click(function (){
+                        //获取编辑和显示位置
+                        var edit_position=$(this).parents("tbody")
+                        var radio_position=$(radio_edit).siblings(".question-radio").children("ul")
+                        //动态添加
+                        var v1="edit-1"
+                        var v2="radio-1"
+                        generate_new_edit(edit_position,v1)
+                        generate_new_radio(radio_position,v2)
+                        $(radio_edit).find("tbody>tr").each(function (index,value){
+                            v1=v1.replace(/(\d+)/,index+1)
+                            $(value).attr("id",v1)
+                        })
+                        $(radio_position).find("li").each(function (index,value){
+                            v2=v2.replace(/(\d+)/,index+1)
+                            $(value).attr("id",v2)
+                        })
+                    })
+                    //选项删除联动
+                    $(radio_edit).find(".design-minu").unbind("click");
+                    $(radio_edit).find(".design-minu").on("click",function () {
+                        var id=$(this).parent().parent().attr("id").split("-")[1]
+                        id="#"+"radio-"+id
+                        $(radio_edit).siblings(".question-radio").find(id).remove()
+                        $(this).parent().parent().remove()
+                        console.log(id)
+                    });
+                    //选项文本联动
+                    var text=$(radio_edit).find("input[type='text']").each(function (index,value){
+                        var edit_text=$(value).val()
+                        var id=$(value).parent().parent().attr("id").split("-")[1]
+                        var radio_text=$(radio_edit).siblings(".question-radio").find("#radio-"+id).find("span").text(edit_text)
+                    })
+                    //正确答案联动
+                    
+                })
+            }
+
+            /*---------- 等待js加载完成  -----------*/
+            $(".paper-question").hover(function (){
+                LoadEvent()
+                ListenEvent(this)
             })
 
-            //单项选择对应操作
+
+        //单项选择对应操作
             //$(".paper-question").on("click",function () {
 
              //   $("#radio-1").bind('input propertychange', function() {
