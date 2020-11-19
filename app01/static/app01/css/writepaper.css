@@ -46,7 +46,6 @@ ul,li{
     padding: 0 16px;
 }
 .shadow{
-    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -237,7 +236,6 @@ ul,li{
     clear: both;
 }
 .modal_paper{
-    display: none;
     position: fixed;
     width: 500px;
     height: 300px;

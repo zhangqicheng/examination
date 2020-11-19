@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>正式考试</title>
     <link rel="stylesheet" href="/static/bootstrap-3.3.7-dist/css/bootstrap.css">
-    <link rel="stylesheet" href="/static/jquery-3.4.1.js">
     <style>
         *{
             margin: 0;
@@ -118,12 +117,22 @@
         $("#submit").click(function () {
             var single={};
             var subject={};
+            var a={}
+            var multiple={};
 
             //获取提交的单项选择
             {% for paper_single in paper_list_single %}
                 var papersingle=$('input:radio[name={{ paper_single.id }}]:checked').val();
                 single[{{ paper_single.id }}]=papersingle;
             {% endfor %}
+            //获取提交的多选题
+            var papermultiple=$("input[type='checkbox'][name='sql']")
+            for(var i=0;i<papermultiple.length;i++){
+                if(papermultiple[i].checked){
+                    a[i+1]=papermultiple[i].value
+                }
+            }
+            multiple[1]=a
 
             //获取提交的主观题
             {% for paper_subject in paper_list_subject %}
@@ -133,6 +142,7 @@
 
             console.log(single);
             console.log(subject);
+            console.log(multiple)
 
             //ajax数据传输
             $.ajax({
@@ -146,8 +156,8 @@
                 },
                 success:function (data) {
                     console.log(data);
-                    alert(data);
-                    location.href='{% url "app01:index" %}'
+                    {#alert(data);#}
+                    {#location.href='{% url "app01:index" %}'#}
                 },
                 error:function (data) {
                     console.log("出错了")

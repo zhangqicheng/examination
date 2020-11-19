@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="f7fba428-4cf4-42de-8428-d8b4e685eaeb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vagrant.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app01/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app01/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app01/static/app01/css/writepaper.css" beforeDir="false" afterPath="$PROJECT_DIR$/app01/static/app01/css/writepaper.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app01/templates/app01/test_process.html" beforeDir="false" afterPath="$PROJECT_DIR$/app01/templates/app01/test_process.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app01/templates/app01/writepaper.html" beforeDir="false" afterPath="$PROJECT_DIR$/app01/templates/app01/writepaper.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,7 +35,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="JupyterTrust" id="eca60342-3ff9-419f-8c93-8985eb34d18e" />
+  <component name="JupyterTrust" id="27305313-79e0-49c9-a00d-8be01d666049" />
   <component name="ProjectId" id="1i7N7T8Kzek9yUu4Cd3XH2d5cRO" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -40,26 +47,27 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.vagrant" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\ZQC\github远程项目\examination\app01\static\app01\images" />
-      <recent name="D:\ZQC\github远程项目\examination\脚本\资产表单填写自动化" />
-      <recent name="D:\ZQC\examination\app01\static\app01\images" />
-      <recent name="D:\ZQC\examination\app01\static\app01" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\ZQC\github远程项目\examination\脚本" />
       <recent name="D:\ZQC\examination\app01\static\app01\images" />
       <recent name="D:\ZQC\examination\static" />
       <recent name="D:\ZQC\examination\app01\static\app01" />
       <recent name="D:\ZQC\examination\app01\static\app01\css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\ZQC\github远程项目\examination\app01\static\app01\images" />
+      <recent name="D:\ZQC\github远程项目\examination\脚本\资产表单填写自动化" />
+      <recent name="D:\ZQC\examination\app01\static\app01\images" />
+      <recent name="D:\ZQC\examination\app01\static\app01" />
     </key>
   </component>
   <component name="RunManager" selected="Django Server.examination">
@@ -313,6 +321,17 @@
       <workItem from="1605405095508" duration="2445000" />
       <workItem from="1605407890600" duration="5168000" />
       <workItem from="1605455843752" duration="422000" />
+      <workItem from="1605486295629" duration="213000" />
+      <workItem from="1605486557091" duration="169000" />
+      <workItem from="1605486825385" duration="238000" />
+      <workItem from="1605487077749" duration="130000" />
+      <workItem from="1605487275288" duration="63000" />
+      <workItem from="1605487347392" duration="254000" />
+      <workItem from="1605488175097" duration="275000" />
+      <workItem from="1605488501314" duration="13337000" />
+      <workItem from="1605601449065" duration="3838000" />
+      <workItem from="1605669283763" duration="967000" />
+      <workItem from="1605751200354" duration="1205000" />
     </task>
     <servers />
   </component>
@@ -320,14 +339,18 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="173" y="84" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602749810540">
+    <state x="173" y="84" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605489756681">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="173" y="84" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.860@0.0.1440.860" timestamp="1602749810540" />
-    <state x="499" y="184" key="FileChooserDialogImpl" timestamp="1603675098849">
+    <state x="173" y="84" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.860@0.0.1440.860" timestamp="1605489756681" />
+    <state x="318" y="0" key="CommitChangelistDialog2" timestamp="1605488741130">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="499" y="184" key="FileChooserDialogImpl/0.0.1440.860@0.0.1440.860" timestamp="1603675098849" />
+    <state x="318" y="0" key="CommitChangelistDialog2/0.0.1440.860@0.0.1440.860" timestamp="1605488741130" />
+    <state x="499" y="184" key="FileChooserDialogImpl" timestamp="1605488822071">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="499" y="184" key="FileChooserDialogImpl/0.0.1440.860@0.0.1440.860" timestamp="1605488822071" />
     <state width="1380" height="219" key="GridCell.Tab.0.bottom" timestamp="1604885008790">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
@@ -360,33 +383,33 @@
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state width="1379" height="264" key="GridCell.Tab.1.right/0.0.1440.860@0.0.1440.860" timestamp="1602729384158" />
-    <state x="220" y="61" key="SettingsEditor" timestamp="1603675297982">
+    <state x="220" y="61" key="SettingsEditor" timestamp="1605489734473">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="220" y="61" key="SettingsEditor/0.0.1440.860@0.0.1440.860" timestamp="1603675297982" />
-    <state x="400" y="254" key="com.intellij.ide.util.TipDialog" timestamp="1605173938988">
+    <state x="220" y="61" key="SettingsEditor/0.0.1440.860@0.0.1440.860" timestamp="1605489734473" />
+    <state x="400" y="254" key="com.intellij.ide.util.TipDialog" timestamp="1605487347458">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="400" y="254" key="com.intellij.ide.util.TipDialog/0.0.1440.860@0.0.1440.860" timestamp="1605173938988" />
+    <state x="400" y="254" key="com.intellij.ide.util.TipDialog/0.0.1440.860@0.0.1440.860" timestamp="1605487347458" />
     <state x="271" y="165" width="895" height="530" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1602729381630">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="271" y="165" width="895" height="530" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1440.860@0.0.1440.860" timestamp="1602729381630" />
-    <state x="363" y="153" width="672" height="574" key="search.everywhere.popup" timestamp="1605408415335">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="383" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1605510348021">
+      <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="363" y="153" width="672" height="574" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1605408415335" />
-    <state x="383" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1440.860@0.0.1440.860" timestamp="1605170290448" />
+    <state x="383" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1440.860@0.0.1440.860" timestamp="1605510348021" />
     <state x="441" y="330" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1602299354527">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="441" y="330" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1440.860@0.0.1440.860" timestamp="1602299354527" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/examination$.coverage" NAME="手机电脑连接 Coverage Results" MODIFIED="1604883841951" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/脚本" />
-    <SUITE FILE_PATH="coverage/examination$tests.coverage" NAME="tests Coverage Results" MODIFIED="1604479451032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app01" />
     <SUITE FILE_PATH="coverage/examination$excel.coverage" NAME="读取excel表格 Coverage Results" MODIFIED="1602742163849" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/脚本" />
-    <SUITE FILE_PATH="coverage/examination$a.coverage" NAME="a Coverage Results" MODIFIED="1602743289085" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/脚本" />
+    <SUITE FILE_PATH="coverage/examination$tests.coverage" NAME="tests Coverage Results" MODIFIED="1604479451032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app01" />
     <SUITE FILE_PATH="coverage/examination$__1_.coverage" NAME="表单填写自动化 (1) Coverage Results" MODIFIED="1603356571510" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/脚本/资产表单填写自动化" />
+    <SUITE FILE_PATH="coverage/examination$.coverage" NAME="手机电脑连接 Coverage Results" MODIFIED="1604883841951" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/脚本" />
+    <SUITE FILE_PATH="coverage/examination$a.coverage" NAME="a Coverage Results" MODIFIED="1602743289085" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/脚本" />
   </component>
 </project>
