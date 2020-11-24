@@ -5,12 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f7fba428-4cf4-42de-8428-d8b4e685eaeb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vagrant.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app01/static/app01/css/layout.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app01/templates/app01/changepwd.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app01/templates/app01/folder.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app01/templates/app01/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app01/templates/app01/recycle.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app01/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app01/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app01/static/app01/css/writepaper.css" beforeDir="false" afterPath="$PROJECT_DIR$/app01/static/app01/css/writepaper.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app01/templates/app01/test_process.html" beforeDir="false" afterPath="$PROJECT_DIR$/app01/templates/app01/test_process.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app01/templates/app01/writepaper.html" beforeDir="false" afterPath="$PROJECT_DIR$/app01/templates/app01/writepaper.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app01/static/app01/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/app01/static/app01/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app01/static/app01/css/paper.css" beforeDir="false" afterPath="$PROJECT_DIR$/app01/static/app01/css/paper.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app01/templates/app01/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app01/templates/app01/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app01/templates/app01/info.html" beforeDir="false" afterPath="$PROJECT_DIR$/app01/templates/app01/info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app01/templates/app01/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/app01/templates/app01/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app01/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app01/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app01/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app01/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teacher/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/teacher/tests.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,9 +34,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
-        <option value="CSS File" />
         <option value="Python Script" />
+        <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -56,6 +64,12 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\ZQC\github远程项目\examination\app01\static\app01\images" />
+      <recent name="D:\ZQC\github远程项目\examination\脚本\资产表单填写自动化" />
+      <recent name="D:\ZQC\examination\app01\static\app01\images" />
+      <recent name="D:\ZQC\examination\app01\static\app01" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\ZQC\github远程项目\examination\脚本" />
       <recent name="D:\ZQC\examination\app01\static\app01\images" />
@@ -63,14 +77,8 @@
       <recent name="D:\ZQC\examination\app01\static\app01" />
       <recent name="D:\ZQC\examination\app01\static\app01\css" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\ZQC\github远程项目\examination\app01\static\app01\images" />
-      <recent name="D:\ZQC\github远程项目\examination\脚本\资产表单填写自动化" />
-      <recent name="D:\ZQC\examination\app01\static\app01\images" />
-      <recent name="D:\ZQC\examination\app01\static\app01" />
-    </key>
   </component>
-  <component name="RunManager" selected="Django Server.examination">
+  <component name="RunManager" selected="Python.tests (1)">
     <configuration name="自动化脚本 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="examination" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -181,6 +189,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="tests (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="examination" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/teacher" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/teacher/tests.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="tests" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="examination" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -233,9 +263,11 @@
       <item itemvalue="Python.tests" />
       <item itemvalue="Python.自动化脚本 (1)" />
       <item itemvalue="Python.表单填写自动化" />
+      <item itemvalue="Python.tests (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.tests (1)" />
         <item itemvalue="Python.tests" />
         <item itemvalue="Python.表单填写自动化" />
         <item itemvalue="Python.自动化脚本 (1)" />
@@ -332,6 +364,10 @@
       <workItem from="1605601449065" duration="3838000" />
       <workItem from="1605669283763" duration="967000" />
       <workItem from="1605751200354" duration="1205000" />
+      <workItem from="1606027477169" duration="1067000" />
+      <workItem from="1606036377265" duration="2128000" />
+      <workItem from="1606093125055" duration="6695000" />
+      <workItem from="1606184088096" duration="16262000" />
     </task>
     <servers />
   </component>
@@ -343,6 +379,10 @@
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="173" y="84" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.860@0.0.1440.860" timestamp="1605489756681" />
+    <state x="450" y="176" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606200802621">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="450" y="176" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.860@0.0.1440.860" timestamp="1606200802621" />
     <state x="318" y="0" key="CommitChangelistDialog2" timestamp="1605488741130">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
@@ -351,22 +391,22 @@
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="499" y="184" key="FileChooserDialogImpl/0.0.1440.860@0.0.1440.860" timestamp="1605488822071" />
-    <state width="1380" height="219" key="GridCell.Tab.0.bottom" timestamp="1604885008790">
+    <state width="1397" height="222" key="GridCell.Tab.0.bottom" timestamp="1606124398579">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="1380" height="219" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1604885008790" />
-    <state width="1380" height="219" key="GridCell.Tab.0.center" timestamp="1604885008790">
+    <state width="1397" height="222" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1606124398579" />
+    <state width="1397" height="222" key="GridCell.Tab.0.center" timestamp="1606124398579">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="1380" height="219" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1604885008790" />
-    <state width="1380" height="219" key="GridCell.Tab.0.left" timestamp="1604885008790">
+    <state width="1397" height="222" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1606124398579" />
+    <state width="1397" height="222" key="GridCell.Tab.0.left" timestamp="1606124398578">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="1380" height="219" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1604885008790" />
-    <state width="1380" height="219" key="GridCell.Tab.0.right" timestamp="1604885008790">
+    <state width="1397" height="222" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1606124398578" />
+    <state width="1397" height="222" key="GridCell.Tab.0.right" timestamp="1606124398579">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="1380" height="219" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1604885008790" />
+    <state width="1397" height="222" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1606124398579" />
     <state width="1379" height="264" key="GridCell.Tab.1.bottom" timestamp="1602729384158">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
@@ -406,6 +446,7 @@
     <state x="441" y="330" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1440.860@0.0.1440.860" timestamp="1602299354527" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/examination$tests__1_.coverage" NAME="tests (1) Coverage Results" MODIFIED="1606102506253" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/teacher" />
     <SUITE FILE_PATH="coverage/examination$excel.coverage" NAME="读取excel表格 Coverage Results" MODIFIED="1602742163849" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/脚本" />
     <SUITE FILE_PATH="coverage/examination$tests.coverage" NAME="tests Coverage Results" MODIFIED="1604479451032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app01" />
     <SUITE FILE_PATH="coverage/examination$__1_.coverage" NAME="表单填写自动化 (1) Coverage Results" MODIFIED="1603356571510" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/脚本/资产表单填写自动化" />

@@ -1,3 +1,6 @@
 from django.test import TestCase
 
-# Create your tests here.
+import re
+import json
+f=open("a.txt",encoding="utf-8")
+print(f.read())

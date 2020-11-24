@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,re_path
 from app01.views import Login,Logout,Index,Info,Test,Score,Paper,TestProcess,ClosePaper,OpenPaper,\
-    WritePaper
+    WritePaper,Recycle,Folder,ChangePwd
 
 urlpatterns = [
     path('login/',Login.as_view(),name='login'),         #登录
@@ -30,4 +30,7 @@ urlpatterns = [
     path('writepaper/',WritePaper.as_view(),name='writepaper'),    #编写试卷
     re_path('closepaper/(\d+)/',ClosePaper.as_view(),name='closepaper'),     #关闭试卷
     re_path('openpaper/(\d+)/',OpenPaper.as_view(),name='openpaper'),        #开启试卷
+    path('recycle/',Recycle.as_view(),name="recycle"),     #回收站
+    path('folder/',Folder.as_view(),name="folder"),      #文件夹
+    path('changepwd/',ChangePwd.as_view(),name="changepwd"), #修改密码
 ]

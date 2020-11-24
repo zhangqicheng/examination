@@ -1,32 +1,238 @@
-{% extends 'app01/base.html' %}
-{% block css %}
-    <link rel="stylesheet" href="/static/app01/css/index.css">
+{% extends "app01/layout.html" %}
+{% block title %}
+    首页
 {% endblock %}
+{% block css %}
+    <link rel="stylesheet" href="/static/app01/css/paper.css">
+{% endblock %}
+{% block content %}
+    <div class="content">
+                    <div class="content_search">
+                        <h3 class="left mysurvey">试卷列表</h3>
+                        <div class="right search" onmouseover="search_over()" onmouseout="search_out()">
+                            <input type="text" placeholder="搜索..." class="search-text" style="width: 50px;">
+                            <input type="button" value="提交" class="search-btn">
+                        </div>
+                        <div class="right spinner-list" id="status" style="margin-right: 14px;padding: 13px 0;">
+                            <div>
+                                <span class="status-cur">状态</span>
+                                <i class="fa fa-sort" aria-hidden="true" style="color: #888"></i>
+                            </div>
+                            <div>
+                                <ul class="status-box hide" id="search-status">
+                                    <li><a href="">状态</a></li>
+                                    <li><a href="">未发布</a></li>
+                                    <li><a href="">已发布</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="right spinner-list" style="margin-right: 14px;padding: 13px 0;">
+                            <div>
+                                <span class="status-cur">时间倒序</span>
+                                <i class="fa fa-sort" aria-hidden="true" style="color: #888"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-list" id="menu-paper">
+                        <dl class="content-items">
+                            <dt class="item-top">
+                                <div class="left">
+                                    <a href="" class="item-tit">试卷1</a>
+                                </div>
+                                <div class="right">
+                                    <div class="left item-id">ID:95802871</div>
+                                    <div class="left item-draft">
+                                        <i class="fa fa-snowflake-o" aria-hidden="true"></i>
+                                        <span>未发布</span>
+                                    </div>
+                                    <div class="left item-sheet">答卷</div>
+                                    <div class="left item-data">10月31日 23:36</div>
+                                </div>
+                            </dt>
+                            <dd class="item-bot">
+                                <div class="left process-box">
+                                    <div class="left process-1">
+                                        <div class="spinner-list">
+                                            <a href="" class="spinner-list-a">
+                                                <i class="icon design-icon"></i>
+                                                <span>考试设计</span>
+                                                <i class="fa fa-caret-down" aria-hidden="true" style="font-style: normal;margin-right: 5px;"></i>
+                                            </a>
+                                            <ul class="status-box" id="item-bot-1" style="left: 0;">
+                                                <li><a href="">考试1</a></li>
+                                                <li><a href="">考试2</a></li>
+                                                <li><a href="">考试3</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="left process-1">
+                                        <div class="spinner-list">
+                                            <a href="" class="spinner-list-a">
+                                                <i class="icon test-icon"></i>
+                                                <span>发送考试</span>
+                                                <i class="fa fa-caret-down" aria-hidden="true" style="font-style: normal;margin-right: 5px;"></i>
+                                            </a>
+                                            <ul class="status-box" id="item-bot-2" style="left: 0">
+                                                <li><a href="">发送1</a></li>
+                                                <li><a href="">发送2</a></li>
+                                                <li><a href="">发送3</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="left process-1">
+                                        <div class="spinner-list">
+                                            <a href="" class="spinner-list-a">
+                                                <i class="icon score-icon"></i>
+                                                <span>成绩&amp;查询</span>
+                                                <i class="fa fa-caret-down" aria-hidden="true" style="font-style: normal;margin-right: 5px;"></i>
+                                            </a>
+                                            <ul class="status-box" id="item-bot-3" style="left: 0">
+                                                <li><a href="">成绩功能1</a></li>
+                                                <li><a href="">成绩功能2</a></li>
+                                                <li><a href="">成绩功能3</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="right operation-box">
+                                    <a href="">
+                                        <i class="fa fa-wifi" aria-hidden="true"></i>
+                                        <span style="color: green;font-weight: bold;">已发布</span>
+                                    </a>
+                                    <a href="">
+                                        <i class="fa fa-play" aria-hidden="true"></i>
+                                        <span>开启</span>
+                                    </a>
+                                    <a href="">
+                                        <i class="fa fa-stop-circle" aria-hidden="true"></i>
+                                        <span>关闭</span>
+                                    </a>
+                                    <a href="">
+                                        <i class="fa fa-clipboard" aria-hidden="true"></i>
+                                        <span>复制</span>
+                                    </a>
+                                    <a href="">
+                                        <i class="fa fa-trash" aria-hidden="true"></i>
+                                        <span>删除</span>
+                                    </a>
+                                    <a href="">
+                                        <i class="fa fa-exclamation" aria-hidden="true"></i>
+                                        <span>提醒</span>
+                                    </a>
+                                </div>
+                            </dd>
+                        </dl>
 
-                                        {#主页内容#}
-{% block show %}
-    <div class="show">
-        <div class="box">
-            {% for item in request.session.qicheng_menu %}
-            <a href="{{ item.url }}">
-                <div class="box-item left">
-                    <div class="icon"><i class="{{ item.icon }}" aria-hidden="true"></i></div>
-                    <div class="text"><span>{{ item.title }}</span></div>
+
+                        <dl class="content-items">
+                            <dt class="item-top">
+                                <div class="left">
+                                    <a href="" class="item-tit">试卷2</a>
+                                </div>
+                                <div class="right">
+                                    <div class="left item-id">ID:95802871</div>
+                                    <div class="left item-draft">
+                                        <i class="fa fa-snowflake-o" aria-hidden="true"></i>
+                                        <span>未发布</span>
+                                    </div>
+                                    <div class="left item-sheet">答卷</div>
+                                    <div class="left item-data">10月31日 23:36</div>
+                                </div>
+                            </dt>
+                            <dd class="item-bot">
+                                <div class="left process-box">
+                                    <div class="left process-1">
+                                        <div class="spinner-list">
+                                            <a href="" class="spinner-list-a">
+                                                <i class="icon design-icon"></i>
+                                                <span>考试设计</span>
+                                                <i class="fa fa-caret-down" aria-hidden="true" style="font-style: normal;margin-right: 5px;"></i>
+                                            </a>
+                                            <ul class="status-box" id="item-bot-1" style="left: 0;">
+                                                <li><a href="">考试1</a></li>
+                                                <li><a href="">考试2</a></li>
+                                                <li><a href="">考试3</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="left process-1">
+                                        <div class="spinner-list">
+                                            <a href="" class="spinner-list-a">
+                                                <i class="icon test-icon"></i>
+                                                <span>发送考试</span>
+                                                <i class="fa fa-caret-down" aria-hidden="true" style="font-style: normal;margin-right: 5px;"></i>
+                                            </a>
+                                            <ul class="status-box" id="item-bot-2" style="left: 0">
+                                                <li><a href="">发送1</a></li>
+                                                <li><a href="">发送2</a></li>
+                                                <li><a href="">发送3</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="left process-1">
+                                        <div class="spinner-list">
+                                            <a href="" class="spinner-list-a">
+                                                <i class="icon score-icon"></i>
+                                                <span>成绩&amp;查询</span>
+                                                <i class="fa fa-caret-down" aria-hidden="true" style="font-style: normal;margin-right: 5px;"></i>
+                                            </a>
+                                            <ul class="status-box" id="item-bot-3" style="left: 0">
+                                                <li><a href="">成绩功能1</a></li>
+                                                <li><a href="">成绩功能2</a></li>
+                                                <li><a href="">成绩功能3</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="right operation-box">
+                                    <a href="">
+                                        <i class="fa fa-wifi" aria-hidden="true"></i>
+                                        <span style="color: green;font-weight: bold;">已发布</span>
+                                    </a>
+                                    <a href="">
+                                        <i class="fa fa-play" aria-hidden="true"></i>
+                                        <span>开启</span>
+                                    </a>
+                                    <a href="">
+                                        <i class="fa fa-stop-circle" aria-hidden="true"></i>
+                                        <span>关闭</span>
+                                    </a>
+                                    <a href="">
+                                        <i class="fa fa-clipboard" aria-hidden="true"></i>
+                                        <span>复制</span>
+                                    </a>
+                                    <a href="">
+                                        <i class="fa fa-trash" aria-hidden="true"></i>
+                                        <span>删除</span>
+                                    </a>
+                                    <a href="">
+                                        <i class="fa fa-exclamation" aria-hidden="true"></i>
+                                        <span>提醒</span>
+                                    </a>
+                                </div>
+                            </dd>
+                        </dl>
+                    </div>
                 </div>
-            </a>
-            {% endfor %}
-{#            <a href="{% url 'app01:test' %}">#}
-{#                <div class="box-item left">#}
-{#                    <div class="icon"><i class="fa fa-bed fa-2x" aria-hidden="true"></i></div>#}
-{#                    <div class="text"><span>考试安排</span></div>#}
-{#                </div>#}
-{#            </a>#}
-{#            <a href="{% url 'app01:score' %}">#}
-{#                <div class="box-item left">#}
-{#                    <div class="icon"><i class="fa fa-bicycle fa-2x" aria-hidden="true"></i></div>#}
-{#                    <div class="text"><span>成绩查询</span></div>#}
-{#                </div>#}
-{#            </a>#}
-        </div>
-    </div>
+{% endblock %}
+{% block js %}
+    <script>
+        //搜索框
+        function search_over() {
+            $(".search-text").css("width","80px");
+            $(".search").addClass("search-active");
+        }
+        function search_out() {
+            $(".search").removeClass("search-active");
+            $(".search-text").css("width","50px");
+        }
+        //搜索状态框显示
+        $("#status").hover(function () {
+            $("#search-status").removeClass('hide');
+        },function () {
+            $("#search-status").addClass('hide');
+        })
+        //菜单
+        $("#first-0").find("span").css("color","orange")
+    </script>
 {% endblock %}

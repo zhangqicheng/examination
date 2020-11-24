@@ -1,7 +1,7 @@
-{% extends 'app01/base.html' %}
+{% extends 'app01/layout.html' %}
 {% block title %}考试安排{% endblock %}
-{% block show %}
-    <div class="main" style="width: 800px;margin: 0 auto;text-align: center">
+{% block content %}
+    <div class="content" style="width: 800px;margin: 20px auto;text-align: center">
         <h3>考试安排</h3>
         <table class="table table-hover">
             <thead>
@@ -12,7 +12,7 @@
                     <td>状态</td>
                     <td>操作</td>
             </thead>
-            <tbody>
+            <tbody style="color: #1F1F1F">
                 {% for paper in test_paper %}
                 <tr>
                     <td>{{ forloop.counter }}</td>
@@ -29,28 +29,30 @@
                     {% else %}
                         {% if paper.status == '1' %}
                         <td style="color: forestgreen">正在进行</td>
-                        <td><a href="{% url 'app01:testprocess' paper.id %}">模拟考试</a>
+                        <td><a href="{% url 'app01:testprocess' paper.id %}" style="color: #1F1F1F">模拟考试</a>
                             |
-                            <a href="{% url "app01:closepaper" paper.id %}">关闭试卷</a>
+                            <a href="{% url "app01:closepaper" paper.id %}" style="color: #1F1F1F">关闭试卷</a>
                         </td>
                         {% else %}
-                        <td style="color: red">已关闭</td>
-                        <td><a href="{% url 'app01:openpaper' paper.id %}">开启试卷</a></td>
+                        <td style="color: red" style="color: #1F1F1F">已关闭</td>
+                        <td><a href="{% url 'app01:openpaper' paper.id %}" style="color: #1F1F1F">开启试卷</a></td>
                         {% endif %}
                     {% endif %}
                 </tr>
                 {% endfor %}
             </tbody>
         </table>
-        <div class="back" style="width: 100%;text-align: right">
-            <button type="button" id='back' class="btn btn-info">返回</button>
-        </div>
     </div>
 {% endblock %}
 {% block js %}
     <script>
-        $("#back").click(function () {
-            location.href='/app01/index/'
+        $("#first-2").find(".right").addClass("iconRotate")
+        $("#first-2").siblings("ul").css("display","block")
+        $("#first-2-1").find("span").css("color","orange")
+        $("table").find("a").hover(function (){
+            $(this).css("color","orange")
+        },function (){
+            $(this).css("color","#1F1F1F")
         })
     </script>
 {% endblock %}

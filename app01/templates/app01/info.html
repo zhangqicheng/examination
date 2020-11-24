@@ -1,14 +1,12 @@
-{% extends 'app01/base.html' %}}
-{% block css %}{% endblock %}
-
+{% extends "app01/layout.html" %}
 {% block title %}
 个人信息
 {% endblock %}
 
-{% block show %}
+{% block content %}
     <div class="wrap" style="width: 500px;margin: 20px auto 10px;text-align: center">
-        <h2>个人信息</h2>
-        <form class="form-horizontal" novalidate method="post" action="{% url 'app01:info' %}">
+        <h3>个人信息</h3>
+        <form class="form-horizontal" novalidate method="post" action="{% url 'app01:info' %}" style="margin-top: 10px;">
         {% csrf_token %}
             {% for form in form_obj %}
               <div class="form-group">

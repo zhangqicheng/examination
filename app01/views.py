@@ -132,7 +132,6 @@ class WritePaper(View):
     def get(self,request):
         return render(request,'app01/writepaper.html')
 
-
 #关闭考试
 class ClosePaper(View):
     def get(self,request,pid):
@@ -150,3 +149,33 @@ class OpenPaper(View):
         paper.status = 1
         paper.save()
         return redirect(reverse('app01:test'))
+
+#回收站
+class Recycle(View):
+    def get(self,request):
+        return render(request,"app01/recycle.html")
+
+#文件夹
+class Folder(View):
+    def get(self,request):
+        return render(request,"app01/folder.html")
+
+#修改密码
+class ChangePwd(View):
+    def get(self,request):
+        return render(request, "app01/changepwd.html")
+
+    def post(self,request):
+        former_pwd=request.POST.get("former_pwd")
+        new_pwd=request.POST.get("new_pwd")
+        user=request.user
+        #验证密码
+        if user.check_password(former_pwd):
+            #如果验证成功
+            user.set_password(new_pwd)
+            user.save()
+            return redirect(reverse("app01:index"))
+        else:
+            return render(request,"app01/changepwd.html",{
+                "msg":"原密码输入错误"
+            })
